@@ -1,0 +1,23 @@
+{
+  "name": "TableViewDataProvider",
+  "version": "1.0.0",
+  "summary": "UITableView Swift-style data provider",
+  "homepage": "https://github.com/elegion/ios-TableViewDataProvider",
+  "license": "MIT",
+  "authors": {
+    "Ilya Kulebyakin": "ilya.kulebyakin@e-legion.com"
+  },
+  "source": {
+    "git": "https://github.com/elegion/ios-TableViewDataProvider.git",
+    "tag": "v1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Source",
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ]
+}
