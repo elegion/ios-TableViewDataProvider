@@ -13,6 +13,11 @@ public enum LinePosition {
         public let left: CGFloat
         public let right: CGFloat
         
+        public init(left: CGFloat, right: CGFloat) {
+            self.left = left
+            self.right = right
+        }
+        
         public static var zero: HorizontalOffsets {
             return HorizontalOffsets(left: 0.0, right: 0.0)
         }
@@ -21,6 +26,11 @@ public enum LinePosition {
     public struct VerticalOffsets {
         public let top: CGFloat
         public let bottom: CGFloat
+        
+        public init(top: CGFloat, bottom: CGFloat) {
+            self.top = top
+            self.bottom = bottom
+        }
         
         public static var zero: VerticalOffsets {
             return VerticalOffsets(top: 0.0, bottom: 0.0)
