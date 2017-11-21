@@ -24,13 +24,13 @@ extension TableViewDataProvider {
         updateCells([(descriptor, indexPath)])
     }
     
-    public func append(rows descriptors: [CellDescriptor], in section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
+    public func setRows(_ descriptors: [CellDescriptor], in section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
         if let index = sections.enumerated().first(where:  { $1 === section })?.offset {
-            append(rows: descriptors, at: index)
+            setRows(descriptors, toSectionAt: index)
         }
     }
     
-    public func append(rows descriptors: [CellDescriptor], at index: Int, animation: UITableViewRowAnimation = .automatic) {
+    public func setRows(_ descriptors: [CellDescriptor], toSectionAt index: Int, animation: UITableViewRowAnimation = .automatic) {
         sections[index].rows = descriptors
         
         guard isTableOwner else { return }
