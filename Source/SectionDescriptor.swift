@@ -38,7 +38,7 @@ public class SectionDescriptor {
     
     var rows: [CellDescriptor]
     
-    var identifier: Identifiable?
+    public var identifier: Identifiable?
     
     public init(header: HeaderFooterDescriptor = .none, footer: HeaderFooterDescriptor = .none, rows: [CellDescriptor]) {
         self.header = header
