@@ -24,6 +24,12 @@ extension TableViewDataProvider {
         updateCells([(descriptor, indexPath)])
     }
     
+    public func setRows(_ descriptors: [CellDescriptor], inSectionWithIdentifier identifier: String, animation: UITableViewRowAnimation = .automatic) {
+        if let section = sections.first(where: { $0.identifier?.stringRepresentation == identifier }) {
+            setRows(descriptors, in: section)
+        }
+    }
+    
     public func setRows(_ descriptors: [CellDescriptor], in section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
         if let index = sections.enumerated().first(where:  { $1 === section })?.offset {
             setRows(descriptors, toSectionAt: index)
@@ -39,6 +45,12 @@ extension TableViewDataProvider {
         let indexes = descriptors.enumerated().map { IndexPath(row: $0.offset, section: index) }
         tableView.insertRows(at: indexes, with: animation)
         tableView.endUpdates()
+    }
+    
+    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: String) {
+        if let section = sections.first(where: { $0.identifier?.stringRepresentation == identifier }) {
+            deleteAllRows(from: section)
+        }
     }
     
     public func deleteAllRowsFromSection(at index: Int, animation: UITableViewRowAnimation = .automatic) {

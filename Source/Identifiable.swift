@@ -10,13 +10,13 @@ import Foundation
 
 public protocol Identifiable {
     
-    var identifier: String { get }
+    var stringRepresentation: String { get }
     
 }
 
 extension String: Identifiable {
     
-    public var identifier: String {
+    public var stringRepresentation: String {
         return self
     }
     
@@ -24,7 +24,7 @@ extension String: Identifiable {
 
 extension Int: Identifiable {
     
-    public var identifier: String {
+    public var stringRepresentation: String {
         return String(self)
     }
     
@@ -32,7 +32,7 @@ extension Int: Identifiable {
 
 extension Float: Identifiable {
     
-    public var identifier: String {
+    public var stringRepresentation: String {
         return String(self)
     }
     
