@@ -24,4 +24,38 @@ extension TableViewDataProvider {
         updateCells([(descriptor, indexPath)])
     }
     
+    public func append(rows descriptors: [CellDescriptor], in section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
+        if let index = sections.enumerated().first(where:  { $1 === section })?.offset {
+            append(rows: descriptors, at: index)
+        }
+    }
+    
+    public func append(rows descriptors: [CellDescriptor], at index: Int, animation: UITableViewRowAnimation = .automatic) {
+        sections[index].rows = descriptors
+        
+        guard isTableOwner else { return }
+        
+        tableView.beginUpdates()
+        let indexes = descriptors.enumerated().map { IndexPath(row: $0.offset, section: index) }
+        tableView.insertRows(at: indexes, with: animation)
+        tableView.endUpdates()
+    }
+    
+    public func deleteAllRowsFromSection(at index: Int, animation: UITableViewRowAnimation = .automatic) {
+        sections[index].rows = []
+        
+        guard isTableOwner else { return }
+        
+        tableView.beginUpdates()
+        let indexes = (0..<tableView.numberOfRows(inSection: index)).map { IndexPath(row: $0, section: index) }
+        tableView.deleteRows(at: indexes, with: animation)
+        tableView.endUpdates()
+    }
+    
+    public func deleteAllRows(from section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
+        if let index = sections.enumerated().first(where:  { $1 === section })?.offset {
+            deleteAllRowsFromSection(at: index, animation: animation)
+        }
+    }
+    
 }

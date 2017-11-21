@@ -17,6 +17,8 @@ public struct CellDescriptor {
     let height: CGFloat?
     let estimatedHeight: CGFloat
     
+    var identifier: Identifiable?
+    
     public init<Cell: TableViewCell>(configuration: @escaping (Cell) -> Void,
                               selection: ((Cell) -> Void)? = nil,
                               estimatedHeight: CGFloat = Cell.estimatedHeight,

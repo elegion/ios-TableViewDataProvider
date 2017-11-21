@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */; };
 		FE1BDEA31F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BDEA21F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift */; };
 		FE1BDEA51F9A069B00BB1F01 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BDEA41F9A069B00BB1F01 /* SeparatorView.swift */; };
 		FE1BDEA71F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BDEA61F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		FE1BDEA21F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
 		FE1BDEA41F9A069B00BB1F01 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		FE1BDEA61F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+HeaderFooters.swift"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				FED0A6EF1F9A16DE00B76A30 /* TableViewHeaderFooterView.swift */,
 				FE1BDEA21F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift */,
 				FEDC7EC31FA8CBF40098566B /* CellProvider.swift */,
+				AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */,
 			);
 			name = Code;
 			path = ../../Source;
@@ -191,6 +194,7 @@
 				FE42BE8B1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift in Sources */,
 				FE42BE871F84D7D1005231E9 /* CellDescriptor.swift in Sources */,
 				FE42BE891F84DA09005231E9 /* SectionDescriptor.swift in Sources */,
+				AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */,
 				FEED2C521F83DB020051A47B /* TableViewCell.swift in Sources */,
 				FEDC7EC41FA8CBF40098566B /* CellProvider.swift in Sources */,
 			);
