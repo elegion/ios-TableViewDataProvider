@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Identifiable {
+public protocol Identifiable {
     
     var identifier: String { get }
     
@@ -16,7 +16,7 @@ protocol Identifiable {
 
 extension String: Identifiable {
     
-    var identifier: String {
+    public var identifier: String {
         return self
     }
     
@@ -24,7 +24,7 @@ extension String: Identifiable {
 
 extension Int: Identifiable {
     
-    var identifier: String {
+    public var identifier: String {
         return String(self)
     }
     
@@ -32,7 +32,7 @@ extension Int: Identifiable {
 
 extension Float: Identifiable {
     
-    var identifier: String {
+    public var identifier: String {
         return String(self)
     }
     
