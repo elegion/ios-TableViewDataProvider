@@ -47,9 +47,9 @@ extension TableViewDataProvider {
         tableView.endUpdates()
     }
     
-    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: String) {
+    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: String, animation: UITableViewRowAnimation = .automatic) {
         if let section = sections.first(where: { $0.identifier?.stringRepresentation == identifier }) {
-            deleteAllRows(from: section)
+            deleteAllRows(from: section, animation: animation)
         }
     }
     
