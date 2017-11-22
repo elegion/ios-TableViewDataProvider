@@ -80,4 +80,12 @@ public class SectionDescriptor {
         }) ?? .none
     }
     
+    public func expand() {
+        isCollapsed = false
+    }
+    
+    public func collapse() {
+        isCollapsed = true
+    }
+    
 }

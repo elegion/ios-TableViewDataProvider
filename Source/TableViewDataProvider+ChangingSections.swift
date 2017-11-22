@@ -55,16 +55,4 @@ extension TableViewDataProvider {
     public func deleteSection(at index: Int, animation: UITableViewRowAnimation = .automatic) {
         deleteSections(at: IndexSet(integer: index), animation: animation)
     }
-    
-    public func expandSectionWithIdentifier(_ identifier: Identifiable) {
-        guard let section = sectionWithIdentifier(identifier) else { return }
-        
-        section.isCollapsed = false
-    }
-    
-    public func collapseSectionWithIdentifier(_ identifier: Identifiable) {
-        guard let section = sectionWithIdentifier(identifier) else { return }
-        
-        section.isCollapsed = true
-    }
 }

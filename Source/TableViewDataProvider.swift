@@ -41,7 +41,7 @@ public class TableViewDataProvider: NSObject {
         return tableView.dataSource === self && tableView.delegate === self
     }
     
-    func sectionWithIdentifier(_ identifier: Identifiable) -> SectionDescriptor? {
+    public func sectionWithIdentifier(_ identifier: Identifiable) -> SectionDescriptor? {
         return sections.first {
             (sectionDescriptor) -> Bool in
             
