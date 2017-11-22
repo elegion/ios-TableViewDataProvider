@@ -38,6 +38,7 @@ public class SectionDescriptor {
     
     var rows: [CellDescriptor]
     
+    /// Should set identifier if need expand/collapse section
     public var identifier: Identifiable?
     public internal(set) var isCollapsed: Bool = false
     
@@ -79,13 +80,6 @@ public class SectionDescriptor {
             })
         }) ?? .none
     }
-    
-    public func expand() {
-        isCollapsed = false
-    }
-    
-    public func collapse() {
-        isCollapsed = true
-    }
+
     
 }

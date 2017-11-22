@@ -31,7 +31,7 @@ public class TableViewDataProvider: NSObject {
     }
     
     var numberOfCells: Int {
-        return sections.reduce(into: 0, { $0 += $1.rows.count })
+        return sections.reduce(into: 0, { $0 += $1.isCollapsed ? 0 : $1.rows.count })
     }
     
     var registeredCellIdentifiers = Set<String>()
