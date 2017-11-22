@@ -39,6 +39,7 @@ public class SectionDescriptor {
     var rows: [CellDescriptor]
     
     public var identifier: Identifiable?
+    public internal(set) var isCollapsed: Bool = false
     
     public init(header: HeaderFooterDescriptor = .none, footer: HeaderFooterDescriptor = .none, rows: [CellDescriptor]) {
         self.header = header

@@ -41,6 +41,16 @@ public class TableViewDataProvider: NSObject {
         return tableView.dataSource === self && tableView.delegate === self
     }
     
+    func sectionWithIdentifier(_ identifier: Identifiable) -> SectionDescriptor? {
+        return sections.first {
+            (sectionDescriptor) -> Bool in
+            
+            guard let sectionIdentifier = sectionDescriptor.identifier else { return false }
+            
+            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
+        }
+    }
+    
 }
 
 extension TableViewDataProvider: UITableViewDelegate {
@@ -75,7 +85,8 @@ extension TableViewDataProvider: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections[section].rows.count
+        let currentSection = sections[section]
+        return currentSection.isCollapsed ? 0 : currentSection.rows.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
