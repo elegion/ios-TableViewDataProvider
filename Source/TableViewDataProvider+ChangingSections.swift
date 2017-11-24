@@ -31,6 +31,32 @@ extension TableViewDataProvider {
         tableView.insertSections(IndexSet(integer: index), with: animation)
     }
     
+    public func replaceSection(section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
+        if let identifier = section.identifier {
+            let index = sections.index {
+                (sec) -> Bool in
+                
+                guard let sectionIdentifier = sec.identifier else { return false }
+                return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
+            }
+            
+            if let index = index {
+                sections[index] = section
+                
+                guard isTableOwner else {
+                    return
+                }
+                
+                tableView.reloadSections(IndexSet(integer: index), with: animation)
+            } else {
+                throw Error.SectionWithIdentifierNotFound(identifier)
+            }
+            
+        } else {
+            throw Error.IdentifierIsEmpty
+        }
+    }
+
     public func replaceSection(at index: Int, withSection section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
         sections[index] = section
         

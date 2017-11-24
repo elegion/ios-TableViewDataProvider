@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DA1FC862B60029907B /* SectionProvider.swift */; };
+		A69831DD1FC8668F0029907B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DC1FC8668F0029907B /* Error.swift */; };
 		AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */; };
 		FE1BDEA31F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BDEA21F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift */; };
 		FE1BDEA51F9A069B00BB1F01 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BDEA41F9A069B00BB1F01 /* SeparatorView.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A69831DA1FC862B60029907B /* SectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionProvider.swift; sourceTree = "<group>"; };
+		A69831DC1FC8668F0029907B /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		FE1BDEA21F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
 		FE1BDEA41F9A069B00BB1F01 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
@@ -97,7 +101,9 @@
 				FED0A6EF1F9A16DE00B76A30 /* TableViewHeaderFooterView.swift */,
 				FE1BDEA21F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift */,
 				FEDC7EC31FA8CBF40098566B /* CellProvider.swift */,
+				A69831DA1FC862B60029907B /* SectionProvider.swift */,
 				AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */,
+				A69831DC1FC8668F0029907B /* Error.swift */,
 			);
 			name = Code;
 			path = ../../Source;
@@ -183,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69831DD1FC8668F0029907B /* Error.swift in Sources */,
 				FE1BDEA71F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift in Sources */,
 				FEED2C301F83D8290051A47B /* TableViewDataProvider.swift in Sources */,
 				FE1BDEA31F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift in Sources */,
@@ -197,6 +204,7 @@
 				AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */,
 				FEED2C521F83DB020051A47B /* TableViewCell.swift in Sources */,
 				FEDC7EC41FA8CBF40098566B /* CellProvider.swift in Sources */,
+				A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
