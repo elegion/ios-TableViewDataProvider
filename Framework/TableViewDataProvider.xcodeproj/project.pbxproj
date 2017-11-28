@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift */; };
 		A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DA1FC862B60029907B /* SectionProvider.swift */; };
 		A69831DD1FC8668F0029907B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DC1FC8668F0029907B /* Error.swift */; };
 		AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+ScrollToSection.swift"; sourceTree = "<group>"; };
 		A69831DA1FC862B60029907B /* SectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionProvider.swift; sourceTree = "<group>"; };
 		A69831DC1FC8668F0029907B /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				FE42BE8A1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift */,
 				FE42BE8C1F84DFB6005231E9 /* TableViewDataProvider+ChangingCells.swift */,
 				FE3BCEA21F852F2500244C9D /* TableViewDataProvider+ChangingSections.swift */,
+				A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift */,
 				FEED2C511F83DB020051A47B /* TableViewCell.swift */,
 				FE1BDEA41F9A069B00BB1F01 /* SeparatorView.swift */,
 				FE42BE861F84D7D1005231E9 /* CellDescriptor.swift */,
@@ -205,6 +208,7 @@
 				FEED2C521F83DB020051A47B /* TableViewCell.swift in Sources */,
 				FEDC7EC41FA8CBF40098566B /* CellProvider.swift in Sources */,
 				A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */,
+				A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

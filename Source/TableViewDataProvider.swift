@@ -51,6 +51,16 @@ public class TableViewDataProvider: NSObject {
         }
     }
     
+    public func indexOfSection(with identifier: Identifiable) -> Int? {
+        let index = sections.index {
+            (sec) -> Bool in
+            
+            guard let sectionIdentifier = sec.identifier else { return false }
+            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
+        }
+        return index
+    }
+    
 }
 
 extension TableViewDataProvider: UITableViewDelegate {

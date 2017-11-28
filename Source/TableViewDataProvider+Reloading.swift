@@ -23,14 +23,7 @@ extension TableViewDataProvider {
     }
     
     public func reloadSectionByIdentifier(_ identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
-        let index = sections.index {
-            (section) -> Bool in
-            
-            guard let sectionIdentifier = section.identifier else { return false }
-            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
-        }
-        
-        if let index = index {
+        if let index = indexOfSection(with: identifier) {
             reloadSections([index], animation: animation)
         }
     }

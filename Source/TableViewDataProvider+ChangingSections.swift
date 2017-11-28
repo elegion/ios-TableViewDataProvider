@@ -33,14 +33,7 @@ extension TableViewDataProvider {
     
     public func replaceSection(section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
         if let identifier = section.identifier {
-            let index = sections.index {
-                (sec) -> Bool in
-                
-                guard let sectionIdentifier = sec.identifier else { return false }
-                return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
-            }
-            
-            if let index = index {
+            if let index = indexOfSection(with: identifier) {
                 sections[index] = section
                 
                 guard isTableOwner else {
@@ -102,12 +95,8 @@ extension TableViewDataProvider {
     }
     
     public func setSection(_ identifier: Identifiable, collapsed: Bool, animation: UITableViewRowAnimation = .automatic) {
-        let index = sections.index { (sectionDescriptor) -> Bool in
-            guard let sectionIdentifier = sectionDescriptor.identifier else { return false }
-            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
-        }
         
-        if let index = index {
+        if let index = indexOfSection(with: identifier) {
             setSection(index, collapsed: collapsed, animation: animation)
         }
     }
