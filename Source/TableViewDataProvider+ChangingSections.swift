@@ -77,8 +77,7 @@ extension TableViewDataProvider {
     
     public func setSection(_ identifier: Identifiable, collapsed: Bool, animation: UITableViewRowAnimation = .automatic) {
         let index = sections.index { (sectionDescriptor) -> Bool in
-            guard let sectionIdentifier = sectionDescriptor.identifier else { return false }
-            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
+            return sectionDescriptor.identifier?.isEqual(to: identifier) ?? false
         }
         
         if let index = index {

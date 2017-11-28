@@ -26,8 +26,7 @@ extension TableViewDataProvider {
         let index = sections.index {
             (section) -> Bool in
             
-            guard let sectionIdentifier = section.identifier else { return false }
-            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
+            return section.identifier?.isEqual(to: identifier) ?? false
         }
         
         if let index = index {

@@ -47,7 +47,7 @@ public class TableViewDataProvider: NSObject {
             
             guard let sectionIdentifier = sectionDescriptor.identifier else { return false }
             
-            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
+            return sectionIdentifier.isEqual(to: identifier)
         }
     }
     

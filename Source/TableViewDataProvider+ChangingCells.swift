@@ -24,8 +24,8 @@ extension TableViewDataProvider {
         updateCells([(descriptor, indexPath)])
     }
     
-    public func setRows(_ descriptors: [CellDescriptor], inSectionWithIdentifier identifier: String, animation: UITableViewRowAnimation = .automatic) {
-        if let section = sections.first(where: { $0.identifier?.stringRepresentation == identifier }) {
+    public func setRows(_ descriptors: [CellDescriptor], inSectionWithIdentifier identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
+        if let section = sections.first(where: { $0.identifier?.isEqual(to: identifier) ?? false }) {
             setRows(descriptors, in: section)
         }
     }
@@ -47,8 +47,8 @@ extension TableViewDataProvider {
         tableView.endUpdates()
     }
     
-    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: String, animation: UITableViewRowAnimation = .automatic) {
-        if let section = sections.first(where: { $0.identifier?.stringRepresentation == identifier }) {
+    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
+        if let section = sections.first(where: { $0.identifier?.isEqual(to: identifier) ?? false }) {
             deleteAllRows(from: section, animation: animation)
         }
     }
