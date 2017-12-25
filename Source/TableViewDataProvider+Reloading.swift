@@ -11,9 +11,9 @@ import Foundation
 extension TableViewDataProvider {
     
     public func reloadData() {
-        guard isTableOwner else { return }
-        
-        tableView.reloadData()
+        withTableViewIfAccessible {
+            $0.reloadData()
+        }
     }
     
     public func reloadSections(with identifiers: Identifiable..., animation: UITableViewRowAnimation = .automatic) throws {
@@ -29,9 +29,9 @@ extension TableViewDataProvider {
     }
     
     public func reloadSections(_ sections: IndexSet, animation: UITableViewRowAnimation = .automatic) {
-        guard isTableOwner else { return }
-        
-        tableView.reloadSections(sections, with: .automatic)
+        withTableViewIfAccessible {
+            $0.reloadSections(sections, with: .automatic)
+        }
     }
     
     public func reloadRows(with identifiers: Identifiable..., animation: UITableViewRowAnimation = .automatic) throws {
@@ -47,9 +47,9 @@ extension TableViewDataProvider {
     }
     
     public func reloadRows(at paths: [IndexPath], animation: UITableViewRowAnimation = .automatic) {
-        guard isTableOwner else { return }
-        
-        tableView.reloadRows(at: paths, with: animation)
+        withTableViewIfAccessible {
+            $0.reloadRows(at: paths, with: animation)
+        }
     }
     
 }

@@ -14,10 +14,10 @@ extension TableViewDataProvider {
     public func append(sections descriptiors: [SectionDescriptor], animation: UITableViewRowAnimation = .automatic) {
         sections.append(contentsOf: descriptiors)
         
-        guard isTableOwner else { return }
-        
-        let insertedIndexSet = IndexSet(integersIn: (sections.count - descriptiors.count)..<sections.count)
-        tableView.insertSections(insertedIndexSet, with: animation)
+        withTableViewIfAccessible {
+            let insertedIndexSet = IndexSet(integersIn: (sections.count - descriptiors.count)..<sections.count)
+            $0.insertSections(insertedIndexSet, with: animation)
+        }
     }
     
     public func append(section descriptor: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
@@ -27,9 +27,9 @@ extension TableViewDataProvider {
     public func insert(section descriptor: SectionDescriptor, at index: Int, animation: UITableViewRowAnimation = .automatic) {
         sections.insert(descriptor, at: index)
         
-        guard isTableOwner else { return }
-        
-        tableView.insertSections(IndexSet(integer: index), with: animation)
+        withTableViewIfAccessible {
+            $0.insertSections(IndexSet(integer: index), with: animation)
+        }
     }
     
     public func replaceIdentifiedSection(_ section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
@@ -45,11 +45,9 @@ extension TableViewDataProvider {
     public func replaceSection(at index: Int, with section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
         sections[index] = section
         
-        guard isTableOwner else {
-            return
+        withTableViewIfAccessible {
+            $0.reloadSections(IndexSet(integer: index), with: animation)
         }
-        
-        tableView.reloadSections(IndexSet(integer: index), with: animation)
     }
     
     public func deleteSections(at indexes: IndexSet, animation: UITableViewRowAnimation = .automatic) {
@@ -58,9 +56,9 @@ extension TableViewDataProvider {
             .filter { !indexes.contains($0.offset) }
             .map { $0.element }
         
-        guard isTableOwner else { return }
-        
-        tableView.deleteSections(indexes, with: animation)
+        withTableViewIfAccessible {
+            $0.deleteSections(indexes, with: animation)
+        }
     }
     
     public func deleteSection(at index: Int, animation: UITableViewRowAnimation = .automatic) {

@@ -77,20 +77,20 @@ extension TableViewDataProvider {
     
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let descriptor = sections[section].header
-        return headerFooterView(for: descriptor)
+        return headerFooterView(for: descriptor, from: tableView)
     }
     
     public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let descriptor = sections[section].footer
-        return headerFooterView(for: descriptor)
+        return headerFooterView(for: descriptor, from: tableView)
     }
     
-    private func headerFooterView(for descriptor: SectionDescriptor.HeaderFooterDescriptor) -> UIView? {
+    private func headerFooterView(for descriptor: SectionDescriptor.HeaderFooterDescriptor, from tableView: UITableView) -> UIView? {
         switch descriptor {
         case .none, .text:
             return nil
         case .configuration(let headerClass, let configuration):
-            registerHeaderFooterIfNeeded(descriptor)
+            registerHeaderFooterIfNeeded(descriptor, in: tableView)
             
             let cell = tableView.tp_dequeueHeaderFooter(of: headerClass)
             
@@ -100,7 +100,7 @@ extension TableViewDataProvider {
         }
     }
     
-    private func registerHeaderFooterIfNeeded(_ descriptor: SectionDescriptor.HeaderFooterDescriptor) {
+    private func registerHeaderFooterIfNeeded(_ descriptor: SectionDescriptor.HeaderFooterDescriptor, in tableView: UITableView) {
         guard let reuseIdentifier = descriptor.reuseIdentifier,
             case SectionDescriptor.HeaderFooterDescriptor.configuration(let headerFooterClass, _) = descriptor,
             !registeredCellIdentifiers.contains(reuseIdentifier) else {

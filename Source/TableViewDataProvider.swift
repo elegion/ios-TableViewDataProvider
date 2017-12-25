@@ -14,7 +14,7 @@ public class TableViewDataProvider: NSObject {
         static let emptyCellIdentifier = "com.e-legion.TableViewDataProvider.EmptyCell"
     }
     
-    let tableView: UITableView
+    private let tableView: UITableView
     let customHeaderFooters: Bool
     
     public init(tableView: UITableView, customHeaders: Bool) {

@@ -19,9 +19,9 @@ extension TableViewDataProvider {
         
         section.isVisiblie = visible
         
-        guard isTableOwner else { return }
-        
-        tableView.reloadSections(IndexSet(integer: sectionIndex), with: animation)
+        withTableViewIfAccessible {
+            $0.reloadSections(IndexSet(integer: sectionIndex), with: animation)
+        }
     }
     
     public func setSection(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) throws {
@@ -46,11 +46,13 @@ extension TableViewDataProvider {
         
         row.isVisible = visible
         
-        guard section.isVisiblie, isTableOwner else {
+        guard section.isVisiblie else {
             return
         }
         
-        tableView.reloadRows(at: [indexPath], with: animation)
+        withTableViewIfAccessible {
+            $0.reloadRows(at: [indexPath], with: animation)
+        }
     }
     
     public func setRow(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) throws {

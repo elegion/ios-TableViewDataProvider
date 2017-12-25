@@ -16,9 +16,9 @@ extension TableViewDataProvider {
             sections[update.indexPath.section].rows[update.indexPath.row] = update.cell
         }
         
-        guard isTableOwner else { return }
-     
-        tableView.reloadRows(at: updates.map { $0.indexPath }, with: animation)
+        withTableViewIfAccessible {
+            $0.reloadRows(at: updates.map { $0.indexPath }, with: animation)
+        }
     }
     
     public func updateCell(descriptor: CellDescriptor, at indexPath: IndexPath, animation: UITableViewRowAnimation = .automatic) {
@@ -41,9 +41,9 @@ extension TableViewDataProvider {
     public func setRows(_ descriptors: [CellDescriptor], toSectionAt index: Int, animation: UITableViewRowAnimation = .automatic) {
         sections[index].rows = descriptors
         
-        guard isTableOwner else { return }
-        
-        tableView.reloadSections(IndexSet(integer: index), with: animation)
+        withTableViewIfAccessible {
+             $0.reloadSections(IndexSet(integer: index), with: animation)
+        }
     }
     
     public func deleteAllRowsFromSectionWithIdentifier(_ identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) throws {
