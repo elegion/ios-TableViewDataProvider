@@ -19,6 +19,8 @@
 		FE42BE891F84DA09005231E9 /* SectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42BE881F84DA09005231E9 /* SectionDescriptor.swift */; };
 		FE42BE8B1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42BE8A1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift */; };
 		FE42BE8D1F84DFB6005231E9 /* TableViewDataProvider+ChangingCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE42BE8C1F84DFB6005231E9 /* TableViewDataProvider+ChangingCells.swift */; };
+		FE6843E41FF1416200653F65 /* TableViewDataProvider+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6843E31FF1416200653F65 /* TableViewDataProvider+UITableViewDelegate.swift */; };
+		FE6843E61FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6843E51FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift */; };
 		FEBC3EC41F99FDC6009752F5 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBC3EC31F99FDC6009752F5 /* UITableView+Dequeue.swift */; };
 		FEC97F241FED2FA7009BCC52 /* TableViewDataProvider+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC97F231FED2FA7009BCC52 /* TableViewDataProvider+Visibility.swift */; };
 		FEC97F261FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC97F251FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift */; };
@@ -44,6 +46,8 @@
 		FE42BE881F84DA09005231E9 /* SectionDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDescriptor.swift; sourceTree = "<group>"; };
 		FE42BE8A1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+Reloading.swift"; sourceTree = "<group>"; };
 		FE42BE8C1F84DFB6005231E9 /* TableViewDataProvider+ChangingCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+ChangingCells.swift"; sourceTree = "<group>"; };
+		FE6843E31FF1416200653F65 /* TableViewDataProvider+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		FE6843E51FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		FEBC3EC31F99FDC6009752F5 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		FEC97F231FED2FA7009BCC52 /* TableViewDataProvider+Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+Visibility.swift"; sourceTree = "<group>"; };
 		FEC97F251FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+CellIdentification.swift"; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				FEED2C2F1F83D8290051A47B /* TableViewDataProvider.swift */,
+				FE6843E31FF1416200653F65 /* TableViewDataProvider+UITableViewDelegate.swift */,
+				FE6843E51FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift */,
 				FE1BDEA61F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift */,
 				FE42BE8A1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift */,
 				FE42BE8C1F84DFB6005231E9 /* TableViewDataProvider+ChangingCells.swift */,
@@ -209,6 +215,7 @@
 				FE1BDEA71F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift in Sources */,
 				FEC97F261FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift in Sources */,
 				FEED2C301F83D8290051A47B /* TableViewDataProvider.swift in Sources */,
+				FE6843E41FF1416200653F65 /* TableViewDataProvider+UITableViewDelegate.swift in Sources */,
 				FEDED9321FF125CB00AFA857 /* IndexSet+TVDP.swift in Sources */,
 				FE1BDEA31F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift in Sources */,
 				FEC97F281FED4685009BCC52 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */,
@@ -222,6 +229,7 @@
 				FE42BE891F84DA09005231E9 /* SectionDescriptor.swift in Sources */,
 				AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */,
 				FEED2C521F83DB020051A47B /* TableViewCell.swift in Sources */,
+				FE6843E61FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift in Sources */,
 				FEDC7EC41FA8CBF40098566B /* CellProvider.swift in Sources */,
 				A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */,
 				A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift in Sources */,
