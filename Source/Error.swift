@@ -10,8 +10,12 @@ import Foundation
 
 enum Error: Swift.Error {
     
-    case IdentifierIsEmpty
-    case SectionWithIdentifierNotFound(Identifiable)
-    case CellWithIdentifierNotFound(Identifiable)
+    case sectionIdentifierIsAbsent
+    
+    case sectionWithIdentifierNotFound(Identifiable)
+    case cellWithIdentifierNotFound(Identifiable)
+    
+    case sectionDescriptorIsNotAssignedToProvider(SectionDescriptor)
+    case cellDescriptorIsNotAssignedToProvicer(CellDescriptor)
     
 }

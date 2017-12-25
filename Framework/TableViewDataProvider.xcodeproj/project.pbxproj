@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift */; };
+		A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */; };
 		A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DA1FC862B60029907B /* SectionProvider.swift */; };
 		A69831DD1FC8668F0029907B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DC1FC8668F0029907B /* Error.swift */; };
 		AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */; };
@@ -25,13 +25,14 @@
 		FEC97F281FED4685009BCC52 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC97F271FED4685009BCC52 /* TableViewDataProvider+SectionIdentifiction.swift */; };
 		FED0A6F01F9A16DE00B76A30 /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED0A6EF1F9A16DE00B76A30 /* TableViewHeaderFooterView.swift */; };
 		FEDC7EC41FA8CBF40098566B /* CellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC7EC31FA8CBF40098566B /* CellProvider.swift */; };
+		FEDED9321FF125CB00AFA857 /* IndexSet+TVDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED9311FF125CB00AFA857 /* IndexSet+TVDP.swift */; };
 		FEED2C281F83D7E60051A47B /* TableViewDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = FEED2C261F83D7E60051A47B /* TableViewDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEED2C301F83D8290051A47B /* TableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEED2C2F1F83D8290051A47B /* TableViewDataProvider.swift */; };
 		FEED2C521F83DB020051A47B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEED2C511F83DB020051A47B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+ScrollToSection.swift"; sourceTree = "<group>"; };
+		A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+ScrollTo.swift"; sourceTree = "<group>"; };
 		A69831DA1FC862B60029907B /* SectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionProvider.swift; sourceTree = "<group>"; };
 		A69831DC1FC8668F0029907B /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		FEC97F271FED4685009BCC52 /* TableViewDataProvider+SectionIdentifiction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+SectionIdentifiction.swift"; sourceTree = "<group>"; };
 		FED0A6EF1F9A16DE00B76A30 /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		FEDC7EC31FA8CBF40098566B /* CellProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProvider.swift; sourceTree = "<group>"; };
+		FEDED9311FF125CB00AFA857 /* IndexSet+TVDP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexSet+TVDP.swift"; sourceTree = "<group>"; };
 		FEED2C231F83D7E60051A47B /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEED2C261F83D7E60051A47B /* TableViewDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDataProvider.h; sourceTree = "<group>"; };
 		FEED2C271F83D7E60051A47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +103,7 @@
 				FE42BE8A1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift */,
 				FE42BE8C1F84DFB6005231E9 /* TableViewDataProvider+ChangingCells.swift */,
 				FE3BCEA21F852F2500244C9D /* TableViewDataProvider+ChangingSections.swift */,
-				A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift */,
+				A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */,
 				FEC97F231FED2FA7009BCC52 /* TableViewDataProvider+Visibility.swift */,
 				FEC97F251FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift */,
 				FEC97F271FED4685009BCC52 /* TableViewDataProvider+SectionIdentifiction.swift */,
@@ -116,6 +118,7 @@
 				A69831DA1FC862B60029907B /* SectionProvider.swift */,
 				AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */,
 				A69831DC1FC8668F0029907B /* Error.swift */,
+				FEDED9311FF125CB00AFA857 /* IndexSet+TVDP.swift */,
 			);
 			name = Code;
 			path = ../../Source;
@@ -206,6 +209,7 @@
 				FE1BDEA71F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift in Sources */,
 				FEC97F261FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift in Sources */,
 				FEED2C301F83D8290051A47B /* TableViewDataProvider.swift in Sources */,
+				FEDED9321FF125CB00AFA857 /* IndexSet+TVDP.swift in Sources */,
 				FE1BDEA31F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift in Sources */,
 				FEC97F281FED4685009BCC52 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */,
 				FE1BDEA51F9A069B00BB1F01 /* SeparatorView.swift in Sources */,
@@ -220,7 +224,7 @@
 				FEED2C521F83DB020051A47B /* TableViewCell.swift in Sources */,
 				FEDC7EC41FA8CBF40098566B /* CellProvider.swift in Sources */,
 				A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */,
-				A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollToSection.swift in Sources */,
+				A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

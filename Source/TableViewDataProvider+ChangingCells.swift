@@ -10,6 +10,7 @@ import Foundation
 
 extension TableViewDataProvider {
     
+    // TODO: Use batch updates
     public func updateCells(_ updates: [(cell: CellDescriptor, indexPath: IndexPath)], animation: UITableViewRowAnimation = .automatic) {
         for update in updates {
             sections[update.indexPath.section].rows[update.indexPath.row] = update.cell
@@ -24,16 +25,17 @@ extension TableViewDataProvider {
         updateCells([(descriptor, indexPath)])
     }
     
-    public func setRows(_ descriptors: [CellDescriptor], inSectionWithIdentifier identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
-        if let section = sectionDescriptor(with: identifier) {
-            setRows(descriptors, in: section)
-        }
+    public func setRows(_ descriptors: [CellDescriptor], inSectionWithIdentifier identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) throws {
+        let index = try indexForSection(with: identifier)
+            
+        setRows(descriptors, toSectionAt: index, animation: animation)
+        
     }
     
-    public func setRows(_ descriptors: [CellDescriptor], in section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
-        if let index = indexForSection(with: section) {
-            setRows(descriptors, toSectionAt: index)
-        }
+    public func setRows(_ descriptors: [CellDescriptor], to section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
+        let index = try indexForSection(with: section)
+        
+        setRows(descriptors, toSectionAt: index)
     }
     
     public func setRows(_ descriptors: [CellDescriptor], toSectionAt index: Int, animation: UITableViewRowAnimation = .automatic) {
@@ -41,33 +43,19 @@ extension TableViewDataProvider {
         
         guard isTableOwner else { return }
         
-        tableView.beginUpdates()
-        let indexes = descriptors.enumerated().map { IndexPath(row: $0.offset, section: index) }
-        tableView.insertRows(at: indexes, with: animation)
-        tableView.endUpdates()
+        tableView.reloadSections(IndexSet(integer: index), with: animation)
     }
     
-    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
-        if let index = indexForSection(with: identifier) {
-            deleteAllRowsFromSection(at: index, animation: animation)
-        }
+    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) throws {
+        try setRows([], inSectionWithIdentifier: identifier, animation: animation)
     }
     
     public func deleteAllRowsFromSection(at index: Int, animation: UITableViewRowAnimation = .automatic) {
-        sections[index].rows = []
-        
-        guard isTableOwner else { return }
-        
-        tableView.beginUpdates()
-        let indexes = (0..<tableView.numberOfRows(inSection: index)).map { IndexPath(row: $0, section: index) }
-        tableView.deleteRows(at: indexes, with: animation)
-        tableView.endUpdates()
+        setRows([], toSectionAt: index, animation: animation)
     }
     
-    public func deleteAllRows(from section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
-        if let index = indexForSection(with: section) {
-            deleteAllRowsFromSection(at: index, animation: animation)
-        }
+    public func deleteAllRows(from section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
+        try setRows([], to: section, animation: animation)
     }
     
 }

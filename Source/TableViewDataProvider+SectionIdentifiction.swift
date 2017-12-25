@@ -10,28 +10,38 @@ import Foundation
 
 extension TableViewDataProvider {
     
-    public func indexForSection(with identifier: Identifiable) -> Int? {
-        return sectionIndex {
+    public func indexForSection(with identifier: Identifiable) throws -> Int {
+        let index = sectionIndex {
             (_, section) -> Bool in
             
             return section.identifier?.isEqual(to: identifier) ?? false
         }
+        
+        guard let result = index else {
+            throw Error.sectionWithIdentifierNotFound(identifier)
+        }
+        
+        return result
     }
     
-    public func sectionDescriptor(with identifier: Identifiable) -> SectionDescriptor? {
-        guard let index = indexForSection(with: identifier) else {
-            return nil
-        }
+    public func sectionDescriptor(with identifier: Identifiable) throws -> SectionDescriptor {
+        let index = try indexForSection(with: identifier)
         
         return sections[index]
     }
     
-    internal func indexForSection(with descriptor: SectionDescriptor) ->Int? {
-        return sectionIndex {
+    internal func indexForSection(with descriptor: SectionDescriptor) throws -> Int {
+        let index = sectionIndex {
             (_, section) -> Bool in
             
             return section === descriptor
         }
+        
+        guard let result = index else {
+            throw Error.sectionDescriptorIsNotAssignedToProvider(descriptor)
+        }
+        
+        return result
     }
     
     private func sectionIndex(where predicate: (Int, SectionDescriptor) -> Bool) -> Int? {

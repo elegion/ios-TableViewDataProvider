@@ -10,28 +10,38 @@ import Foundation
 
 extension TableViewDataProvider {
     
-    public func indexPathForRow(with identifier: Identifiable) -> IndexPath? {
-        return cellIndexPath {
+    public func indexPathForRow(with identifier: Identifiable) throws -> IndexPath {
+        let indexPath = cellIndexPath {
             (_, cell, _) -> Bool in
             
             return cell.identifier?.isEqual(to: identifier) ?? false
         }
+        
+        guard let result = indexPath else {
+            throw Error.cellWithIdentifierNotFound(identifier)
+        }
+        
+        return result
     }
     
-    public func cellDescriptor(with identifier: Identifiable) -> CellDescriptor? {
-        guard let indexPath = indexPathForRow(with: identifier) else {
-            return nil
-        }
+    public func cellDescriptor(with identifier: Identifiable) throws -> CellDescriptor? {
+        let indexPath = try indexPathForRow(with: identifier)
         
         return sections[indexPath.section].rows[indexPath.row]
     }
     
-    internal func indexPathForRow(with descriptor: CellDescriptor) -> IndexPath? {
-        return cellIndexPath {
+    internal func indexPathForRow(with descriptor: CellDescriptor) throws -> IndexPath {
+        let indexPath = cellIndexPath {
             (_, cell, _) -> Bool in
             
             return cell === descriptor
         }
+        
+        guard let result = indexPath else {
+            throw Error.cellDescriptorIsNotAssignedToProvicer(descriptor)
+        }
+        
+        return result
     }
     
     private func cellIndexPath(where predicate: (SectionDescriptor, CellDescriptor, IndexPath) -> Bool) -> IndexPath? {

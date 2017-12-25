@@ -24,17 +24,16 @@ extension TableViewDataProvider {
         tableView.reloadSections(IndexSet(integer: sectionIndex), with: animation)
     }
     
-    public func setSection(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
-        if let index = indexForSection(with: identifier) {
-            setSection(at: index, visible: visible, animation: animation)
-        }
+    public func setSection(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) throws {
+        let index = try indexForSection(with: identifier)
+        
+        setSection(at: index, visible: visible, animation: animation)
     }
     
-    public func setSection(with sectionDescriptor: SectionDescriptor, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
-        if let index = indexForSection(with: sectionDescriptor) {
-            setSection(at: index, visible: visible, animation: animation)
-        }
-    
+    public func setSection(with sectionDescriptor: SectionDescriptor, visible: Bool, animation: UITableViewRowAnimation = .automatic) throws {
+        let index = try indexForSection(with: sectionDescriptor)
+        
+        setSection(at: index, visible: visible, animation: animation)
     }
     
     public func setRow(at indexPath: IndexPath, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
@@ -54,16 +53,16 @@ extension TableViewDataProvider {
         tableView.reloadRows(at: [indexPath], with: animation)
     }
     
-    public func setRow(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
-        if let indexPath = indexPathForRow(with: identifier) {
-            setRow(at: indexPath, visible: visible, animation: animation)
-        }
+    public func setRow(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) throws {
+        let indexPath = try indexPathForRow(with: identifier)
+            
+        setRow(at: indexPath, visible: visible, animation: animation)
     }
     
-    public func setRow(for descriptor: CellDescriptor, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
-        if let indexPath = indexPathForRow(with: descriptor) {
-            setRow(at: indexPath, visible: visible, animation: animation)
-        }
+    public func setRow(for descriptor: CellDescriptor, visible: Bool, animation: UITableViewRowAnimation = .automatic) throws {
+        let indexPath = try indexPathForRow(with: descriptor)
+        
+        setRow(at: indexPath, visible: visible, animation: animation)
     }
     
 }

@@ -10,6 +10,7 @@ import Foundation
 
 extension TableViewDataProvider {
     
+    // TODO: Batch updates + insert
     public func append(sections descriptiors: [SectionDescriptor], animation: UITableViewRowAnimation = .automatic) {
         sections.append(contentsOf: descriptiors)
         
@@ -31,26 +32,17 @@ extension TableViewDataProvider {
         tableView.insertSections(IndexSet(integer: index), with: animation)
     }
     
-    public func replaceSection(section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
-        if let identifier = section.identifier {
-            if let index = indexOfSection(with: identifier) {
-                sections[index] = section
-                
-                guard isTableOwner else {
-                    return
-                }
-                
-                tableView.reloadSections(IndexSet(integer: index), with: animation)
-            } else {
-                throw Error.SectionWithIdentifierNotFound(identifier)
-            }
-            
-        } else {
-            throw Error.IdentifierIsEmpty
+    public func replaceIdentifiedSection(_ section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
+        guard let identifier = section.identifier else {
+            throw Error.sectionIdentifierIsAbsent
         }
+        
+        let index = try indexForSection(with: identifier)
+        
+        replaceSection(at: index, with: section, animation: animation)
     }
 
-    public func replaceSection(at index: Int, withSection section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
+    public func replaceSection(at index: Int, with section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
         sections[index] = section
         
         guard isTableOwner else {
