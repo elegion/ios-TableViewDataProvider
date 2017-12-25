@@ -75,35 +75,4 @@ extension TableViewDataProvider {
         deleteSections(at: IndexSet(integer: index), animation: animation)
     }
     
-    public func setSection(_ sectionIndex: Int, collapsed: Bool, animation: UITableViewRowAnimation = .automatic) {
-        let section = sections[sectionIndex]
-        
-        guard section.isCollapsed != collapsed else {
-            return
-        }
-        
-        section.isCollapsed = collapsed
-        
-        guard isTableOwner else { return }
-        
-        let indexPaths = (0..<section.rows.count).map { IndexPath(row: $0, section: sectionIndex) }
-        if collapsed {
-            tableView.deleteRows(at: indexPaths, with: animation)
-        } else {
-            tableView.insertRows(at: indexPaths, with: animation)
-        }
-    }
-    
-    public func setSection(_ identifier: Identifiable, collapsed: Bool, animation: UITableViewRowAnimation = .automatic) {
-        
-        if let index = indexOfSection(with: identifier) {
-            setSection(index, collapsed: collapsed, animation: animation)
-        }
-    }
-    
-    public func setSection(_ sectionDescriptor: SectionDescriptor, collapsed: Bool, animation: UITableViewRowAnimation = .automatic) {
-        guard let identifier = sectionDescriptor.identifier else { return }
-        
-        setSection(identifier, collapsed: collapsed, animation: animation)
-    }
 }

@@ -1,6 +1,6 @@
 {
   "name": "TableViewDataProvider",
-  "version": "1.0.0",
+  "version": "1.0.0.alpha.1",
   "summary": "UITableView Swift-style data provider",
   "homepage": "https://github.com/elegion/ios-TableViewDataProvider",
   "license": "MIT",
@@ -9,10 +9,10 @@
   },
   "source": {
     "git": "https://github.com/elegion/ios-TableViewDataProvider.git",
-    "tag": "v1.0.0"
+    "tag": "v1.0.0.alpha.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "source_files": "Source",

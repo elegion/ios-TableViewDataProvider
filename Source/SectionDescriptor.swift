@@ -33,14 +33,21 @@ public class SectionDescriptor {
         }
     }
     
-    var header: HeaderFooterDescriptor
-    var footer: HeaderFooterDescriptor
+    public var header: HeaderFooterDescriptor
+    public var footer: HeaderFooterDescriptor
     
-    var rows: [CellDescriptor]
+    public var rows: [CellDescriptor]
+    var visibleRows: [CellDescriptor] {
+        guard isVisiblie else {
+            return []
+        }
+        
+        return rows.filter { $0.isVisible }
+    }
     
-    /// Should set identifier if need expand/collapse section
     public var identifier: Identifiable?
-    public internal(set) var isCollapsed: Bool = false
+    
+    public var isVisiblie: Bool = true
     
     public init(header: HeaderFooterDescriptor = .none, footer: HeaderFooterDescriptor = .none, rows: [CellDescriptor]) {
         self.header = header

@@ -22,8 +22,8 @@ extension TableViewDataProvider {
         tableView.reloadSections(sections, with: .automatic)
     }
     
-    public func reloadSectionByIdentifier(_ identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
-        if let index = indexOfSection(with: identifier) {
+    public func reloadSection(with identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
+        if let index = indexForSection(with: identifier) {
             reloadSections([index], animation: animation)
         }
     }

@@ -3,29 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		01F2EA06C5B95AA2171494D516697197 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		11A2E50763EF98534C7F8A1D85F1C601 /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DC01904768DA1C224BF512DC935E4 /* TableViewHeaderFooterView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1D69E425A46983C1C6AB4F77E9FF616A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32DA846F2F597A965F6A59D6CB4EA4E /* TableViewCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1F6E6AEF5E5D855B583148817E2B19B2 /* TableViewDataProvider+HeaderFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FDC273D48DF7AFB859C8B521843D7 /* TableViewDataProvider+HeaderFooters.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		516A7735DD9BDE7FCDA7528269F91C53 /* TableViewDataProvider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3130E7307807D1144D2624B0B39DF668 /* TableViewDataProvider-dummy.m */; };
-		523899DCA1546342A1AD14FCFDFC422A /* UIView+RecursiveSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D8EF2732595D56D4AB34C586FA8CA7 /* UIView+RecursiveSubview.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		56B82170476A8FC1E76F5039A536BA69 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788F8896E0938F666455522A5D66165 /* UITableView+Dequeue.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5ADDCE30CB78F1CB7B61BC0D5E737A06 /* SectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C768705AF9F507D41AA877F4B1294C2 /* SectionDescriptor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6329F26A83C80BA150111EBB860F2090 /* TableViewDataProvider+ChangingSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DBF4C255C45EABC09FB83BDC412520 /* TableViewDataProvider+ChangingSections.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0F041F42B45A1F03EC9DB083E6B9CF61 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFF1E5A46DFFC16C891A02418C86F3 /* UITableView+Dequeue.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2A23D18E21C2504D3F417968A5A636CB /* CellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805BEA0A64B7E714FCC6AB09A0CB4B5D /* CellProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2CF8431A649A6683B25EA38656A6C5F1 /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BF7EE2F2CFB652FBC08AE908D9232A /* TableViewHeaderFooterView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		30D5A849FDD034C7616E2190035460DC /* TableViewDataProvider+ChangingCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018566C05D290260754BF10394162A2 /* TableViewDataProvider+ChangingCells.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4848F9274C848D8347D749D644A5FD40 /* TableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70C1EB65282FBA03477F9C3C80EBBE2 /* TableViewDataProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5684AB3E2DBFD9FA835BC021C19C8643 /* UIView+RecursiveSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796260FB9FA4AB6600DC7E988A1F6A33 /* UIView+RecursiveSubview.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		58A4620034BF0B54389B5BBAA4A1BD14 /* TableViewDataProvider+ChangingSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD5E36068C838CEDFA685B97E52A50 /* TableViewDataProvider+ChangingSections.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		678800265951F9FA4430CD64518163C9 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		784A9A1A2AE7E6A8870548B73E5A67FE /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967DD0182A4AD9B1B1A742C8614C43D /* CellDescriptor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		89F4BD4E3489ED1597004688445CA29A /* TableViewDataProvider+ChangingCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136307C66F6230363BC972C21590DE5B /* TableViewDataProvider+ChangingCells.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D003C619FCF81E3102375494AE837DC2 /* TableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1789181B37B5DC10AA6C942BDD702 /* TableViewDataProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		85C3D7ACDD7FB8A53E22445FB5B493B7 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45653DC398810B42A92B35F5B870B43D /* Identifiable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		99D7BC14A036CE581E4E101987930627 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597B724B0408D23058429E4CE1B4DEA /* TableViewDataProvider+SectionIdentifiction.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AA70CC0B9F03E541FE23BA2A7DE94E0A /* TableViewDataProvider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5511FE02B867AD469A57A4289F8CE /* TableViewDataProvider-dummy.m */; };
+		B831317ED0F3A4CF81C9321C957DD030 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F9E8937893A7A520358C1D2F8ECDDB /* SeparatorView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C2CFE2DFFF6E07E3761B5C90C5B4358F /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC45BEF094142C3C86B61CAB33E0CCB /* CellDescriptor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C766F2C391CABD730213EA103259D01E /* TableViewDataProvider+CellIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED0C7AA51E492A27A33BD6718EEFEDC /* TableViewDataProvider+CellIdentification.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D98EDEFDD05A5247C93B97ECEAF42E91 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */; };
+		DBAF8AF347424EC866976135906216CE /* SectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FFE061C10A246CCC9E1E2DFA17973 /* SectionDescriptor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DF3FC1427F756A983FD06D62F6F95692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		E4B194995CDD9B550F8D6893A0185462 /* TableViewDataProvider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F920993FB70834A92A75515ADA5CC1 /* TableViewDataProvider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E444A8C247A91A8A82187CC1DD4E6159 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F313A6F9A69889F393DFFD7104A252 /* TableViewCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E4B194995CDD9B550F8D6893A0185462 /* TableViewDataProvider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8136ABA0E5FFE41A31B064BE63AA92 /* TableViewDataProvider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6D2645E190024CD3E8650D400DC346E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		F27BAF42A0F14CC42C5E44D87FD6AA81 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D2D36C3209512F31339F4F09651C1 /* SeparatorView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FB61FBA70C6B8A62F73B894DD4403728 /* TableViewDataProvider+Reloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D219C85B82AE00D7AEB5B4FCA87CAA /* TableViewDataProvider+Reloading.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ECA6852BB5492217765EECEE7AD21A87 /* TableViewDataProvider+Reloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749F68473C2FFC01C2E8F05956F5AF56 /* TableViewDataProvider+Reloading.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F8A2B3964DED6BE0B5D22335E2563BA0 /* TableViewDataProvider+HeaderFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D51E936610D1A88C0488D2BFCB43BF /* TableViewDataProvider+HeaderFooters.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FBE5A60E697FF83BAD56163569789D76 /* TableViewDataProvider+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1204A58F0BCDC8FC7C1100AC5F736 /* TableViewDataProvider+Visibility.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,39 +44,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0018566C05D290260754BF10394162A2 /* TableViewDataProvider+ChangingCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingCells.swift"; path = "Source/TableViewDataProvider+ChangingCells.swift"; sourceTree = "<group>"; };
 		01E6907CF2644EB1CF8E23F708A3DA0B /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		099A17D5C81418EB2C21F8ECC6E7B670 /* TableViewDataProvider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TableViewDataProvider.modulemap; sourceTree = "<group>"; };
-		0C4DC01904768DA1C224BF512DC935E4 /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = Source/TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
-		136307C66F6230363BC972C21590DE5B /* TableViewDataProvider+ChangingCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingCells.swift"; path = "Source/TableViewDataProvider+ChangingCells.swift"; sourceTree = "<group>"; };
+		119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
 		149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		20F920993FB70834A92A75515ADA5CC1 /* TableViewDataProvider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-umbrella.h"; sourceTree = "<group>"; };
-		3130E7307807D1144D2624B0B39DF668 /* TableViewDataProvider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableViewDataProvider-dummy.m"; sourceTree = "<group>"; };
-		4BEDB9362A85329B5A1954D96A1A420D /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51D8EF2732595D56D4AB34C586FA8CA7 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RecursiveSubview.swift"; path = "Source/UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
+		18BFF1E5A46DFFC16C891A02418C86F3 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Dequeue.swift"; path = "Source/UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		2B8136ABA0E5FFE41A31B064BE63AA92 /* TableViewDataProvider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-umbrella.h"; sourceTree = "<group>"; };
+		38F9E8937893A7A520358C1D2F8ECDDB /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Source/SeparatorView.swift; sourceTree = "<group>"; };
+		3CD1204A58F0BCDC8FC7C1100AC5F736 /* TableViewDataProvider+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Visibility.swift"; path = "Source/TableViewDataProvider+Visibility.swift"; sourceTree = "<group>"; };
+		3D2AC7BE97843D4FE30ACDE874CD10A4 /* TableViewDataProvider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-prefix.pch"; sourceTree = "<group>"; };
+		3DC45BEF094142C3C86B61CAB33E0CCB /* CellDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellDescriptor.swift; path = Source/CellDescriptor.swift; sourceTree = "<group>"; };
+		45653DC398810B42A92B35F5B870B43D /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Source/Identifiable.swift; sourceTree = "<group>"; };
+		4BEDB9362A85329B5A1954D96A1A420D /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TableViewDataProvider.framework; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55208E2787FAB4A8DF8F645957C27B18 /* TableViewDataProvider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewDataProvider.xcconfig; sourceTree = "<group>"; };
 		552550F3F912264E5D073F8893691F88 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		5F5E39E5688C614B3B30D078D4CA8817 /* TableViewDataProvider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-prefix.pch"; sourceTree = "<group>"; };
-		5F7D2D36C3209512F31339F4F09651C1 /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Source/SeparatorView.swift; sourceTree = "<group>"; };
-		5FD1789181B37B5DC10AA6C942BDD702 /* TableViewDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDataProvider.swift; path = Source/TableViewDataProvider.swift; sourceTree = "<group>"; };
+		68BF7EE2F2CFB652FBC08AE908D9232A /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = Source/TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		6C34972D3221F065F4FF89E64E3398D7 /* TableViewDataProvider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewDataProvider.xcconfig; sourceTree = "<group>"; };
-		73D219C85B82AE00D7AEB5B4FCA87CAA /* TableViewDataProvider+Reloading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Reloading.swift"; path = "Source/TableViewDataProvider+Reloading.swift"; sourceTree = "<group>"; };
+		749F68473C2FFC01C2E8F05956F5AF56 /* TableViewDataProvider+Reloading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Reloading.swift"; path = "Source/TableViewDataProvider+Reloading.swift"; sourceTree = "<group>"; };
 		764D33E23CE6C1111110B04F5CBADADB /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97DBF4C255C45EABC09FB83BDC412520 /* TableViewDataProvider+ChangingSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingSections.swift"; path = "Source/TableViewDataProvider+ChangingSections.swift"; sourceTree = "<group>"; };
-		9A04D8CAC032A677BA699F2CFD9C0A7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C768705AF9F507D41AA877F4B1294C2 /* SectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionDescriptor.swift; path = Source/SectionDescriptor.swift; sourceTree = "<group>"; };
-		A32DA846F2F597A965F6A59D6CB4EA4E /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Source/TableViewCell.swift; sourceTree = "<group>"; };
+		775FFE061C10A246CCC9E1E2DFA17973 /* SectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionDescriptor.swift; path = Source/SectionDescriptor.swift; sourceTree = "<group>"; };
+		796260FB9FA4AB6600DC7E988A1F6A33 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RecursiveSubview.swift"; path = "Source/UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
+		805BEA0A64B7E714FCC6AB09A0CB4B5D /* CellProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellProvider.swift; path = Source/CellProvider.swift; sourceTree = "<group>"; };
+		8597B724B0408D23058429E4CE1B4DEA /* TableViewDataProvider+SectionIdentifiction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+SectionIdentifiction.swift"; path = "Source/TableViewDataProvider+SectionIdentifiction.swift"; sourceTree = "<group>"; };
+		8ED5511FE02B867AD469A57A4289F8CE /* TableViewDataProvider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableViewDataProvider-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2BD5E36068C838CEDFA685B97E52A50 /* TableViewDataProvider+ChangingSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingSections.swift"; path = "Source/TableViewDataProvider+ChangingSections.swift"; sourceTree = "<group>"; };
 		A661FECCEBFF9D01869EE3B29C4C1EFF /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A70C1EB65282FBA03477F9C3C80EBBE2 /* TableViewDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDataProvider.swift; path = Source/TableViewDataProvider.swift; sourceTree = "<group>"; };
+		A7D51E936610D1A88C0488D2BFCB43BF /* TableViewDataProvider+HeaderFooters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+HeaderFooters.swift"; path = "Source/TableViewDataProvider+HeaderFooters.swift"; sourceTree = "<group>"; };
+		A7F313A6F9A69889F393DFFD7104A252 /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Source/TableViewCell.swift; sourceTree = "<group>"; };
+		AED0C7AA51E492A27A33BD6718EEFEDC /* TableViewDataProvider+CellIdentification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+CellIdentification.swift"; path = "Source/TableViewDataProvider+CellIdentification.swift"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C788F8896E0938F666455522A5D66165 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Dequeue.swift"; path = "Source/UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
-		CE3FDC273D48DF7AFB859C8B521843D7 /* TableViewDataProvider+HeaderFooters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+HeaderFooters.swift"; path = "Source/TableViewDataProvider+HeaderFooters.swift"; sourceTree = "<group>"; };
-		D441F3128D6FF2D8836BBE67E306C4B0 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D441F3128D6FF2D8836BBE67E306C4B0 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D967DD0182A4AD9B1B1A742C8614C43D /* CellDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellDescriptor.swift; path = Source/CellDescriptor.swift; sourceTree = "<group>"; };
 		E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		E60601556FEA6DF61EDE0FF42089808B /* TableViewDataProvider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TableViewDataProvider.modulemap; sourceTree = "<group>"; };
 		EFFB74AAA6B2AE8DABF0E88E61E09178 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E38EF3860EDBB3B81ABA948F2C9FAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,20 +105,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DBC6B9753BFF4FBE959B1DE2CE313BF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A04D8CAC032A677BA699F2CFD9C0A7D /* Info.plist */,
-				099A17D5C81418EB2C21F8ECC6E7B670 /* TableViewDataProvider.modulemap */,
-				6C34972D3221F065F4FF89E64E3398D7 /* TableViewDataProvider.xcconfig */,
-				3130E7307807D1144D2624B0B39DF668 /* TableViewDataProvider-dummy.m */,
-				5F5E39E5688C614B3B30D078D4CA8817 /* TableViewDataProvider-prefix.pch */,
-				20F920993FB70834A92A75515ADA5CC1 /* TableViewDataProvider-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TableViewDataProvider";
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +122,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		48FF063F90CD03C79C0A942B29DF869A /* TableViewDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				3DC45BEF094142C3C86B61CAB33E0CCB /* CellDescriptor.swift */,
+				805BEA0A64B7E714FCC6AB09A0CB4B5D /* CellProvider.swift */,
+				45653DC398810B42A92B35F5B870B43D /* Identifiable.swift */,
+				775FFE061C10A246CCC9E1E2DFA17973 /* SectionDescriptor.swift */,
+				38F9E8937893A7A520358C1D2F8ECDDB /* SeparatorView.swift */,
+				A7F313A6F9A69889F393DFFD7104A252 /* TableViewCell.swift */,
+				A70C1EB65282FBA03477F9C3C80EBBE2 /* TableViewDataProvider.swift */,
+				AED0C7AA51E492A27A33BD6718EEFEDC /* TableViewDataProvider+CellIdentification.swift */,
+				0018566C05D290260754BF10394162A2 /* TableViewDataProvider+ChangingCells.swift */,
+				A2BD5E36068C838CEDFA685B97E52A50 /* TableViewDataProvider+ChangingSections.swift */,
+				A7D51E936610D1A88C0488D2BFCB43BF /* TableViewDataProvider+HeaderFooters.swift */,
+				749F68473C2FFC01C2E8F05956F5AF56 /* TableViewDataProvider+Reloading.swift */,
+				8597B724B0408D23058429E4CE1B4DEA /* TableViewDataProvider+SectionIdentifiction.swift */,
+				3CD1204A58F0BCDC8FC7C1100AC5F736 /* TableViewDataProvider+Visibility.swift */,
+				68BF7EE2F2CFB652FBC08AE908D9232A /* TableViewHeaderFooterView.swift */,
+				18BFF1E5A46DFFC16C891A02418C86F3 /* UITableView+Dequeue.swift */,
+				796260FB9FA4AB6600DC7E988A1F6A33 /* UIView+RecursiveSubview.swift */,
+				727D9C828C15C93324A154C00AF9B24B /* Support Files */,
+			);
+			name = TableViewDataProvider;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,23 +156,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		727D9C828C15C93324A154C00AF9B24B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1E38EF3860EDBB3B81ABA948F2C9FAE /* Info.plist */,
+				E60601556FEA6DF61EDE0FF42089808B /* TableViewDataProvider.modulemap */,
+				55208E2787FAB4A8DF8F645957C27B18 /* TableViewDataProvider.xcconfig */,
+				8ED5511FE02B867AD469A57A4289F8CE /* TableViewDataProvider-dummy.m */,
+				3D2AC7BE97843D4FE30ACDE874CD10A4 /* TableViewDataProvider-prefix.pch */,
+				2B8136ABA0E5FFE41A31B064BE63AA92 /* TableViewDataProvider-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TableViewDataProvider";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				A2678A1BF24AAE23337C44B22D5E0667 /* Development Pods */,
+				DC2E6E3C233D748BD84D7D326244C476 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				C27B78230E0EA61B88B22B13A9139789 /* Products */,
 				6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		A2678A1BF24AAE23337C44B22D5E0667 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EC25AAC54F662C9EC5360D7321D717D5 /* TableViewDataProvider */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C27B78230E0EA61B88B22B13A9139789 /* Products */ = {
@@ -162,25 +190,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC25AAC54F662C9EC5360D7321D717D5 /* TableViewDataProvider */ = {
+		DC2E6E3C233D748BD84D7D326244C476 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D967DD0182A4AD9B1B1A742C8614C43D /* CellDescriptor.swift */,
-				9C768705AF9F507D41AA877F4B1294C2 /* SectionDescriptor.swift */,
-				5F7D2D36C3209512F31339F4F09651C1 /* SeparatorView.swift */,
-				A32DA846F2F597A965F6A59D6CB4EA4E /* TableViewCell.swift */,
-				5FD1789181B37B5DC10AA6C942BDD702 /* TableViewDataProvider.swift */,
-				136307C66F6230363BC972C21590DE5B /* TableViewDataProvider+ChangingCells.swift */,
-				97DBF4C255C45EABC09FB83BDC412520 /* TableViewDataProvider+ChangingSections.swift */,
-				CE3FDC273D48DF7AFB859C8B521843D7 /* TableViewDataProvider+HeaderFooters.swift */,
-				73D219C85B82AE00D7AEB5B4FCA87CAA /* TableViewDataProvider+Reloading.swift */,
-				0C4DC01904768DA1C224BF512DC935E4 /* TableViewHeaderFooterView.swift */,
-				C788F8896E0938F666455522A5D66165 /* UITableView+Dequeue.swift */,
-				51D8EF2732595D56D4AB34C586FA8CA7 /* UIView+RecursiveSubview.swift */,
-				2DBC6B9753BFF4FBE959B1DE2CE313BF /* Support Files */,
+				48FF063F90CD03C79C0A942B29DF869A /* TableViewDataProvider */,
 			);
-			name = TableViewDataProvider;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		FE9811ABEB5931E154211FCA14B78350 /* Pods-Example */ = {
@@ -227,7 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEC38917A51EC94C5B8F22E524F2273F /* Build configuration list for PBXNativeTarget "TableViewDataProvider" */;
 			buildPhases = (
-				4EF7A54C9B5BDCA878B2A797B93B7083 /* Sources */,
+				BB64A8E245CB33DAA27103D71FDAC1F7 /* Sources */,
 				37319A323D19416B17080E8F55FA7C9E /* Frameworks */,
 				01C720E599B60FD6BC3C5B2E6BBEC930 /* Headers */,
 			);
@@ -266,11 +281,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					BC92F2309649B45845E2B882315069AE = {
-						LastSwiftMigration = 0910;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -299,23 +309,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EF7A54C9B5BDCA878B2A797B93B7083 /* Sources */ = {
+		BB64A8E245CB33DAA27103D71FDAC1F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784A9A1A2AE7E6A8870548B73E5A67FE /* CellDescriptor.swift in Sources */,
-				5ADDCE30CB78F1CB7B61BC0D5E737A06 /* SectionDescriptor.swift in Sources */,
-				F27BAF42A0F14CC42C5E44D87FD6AA81 /* SeparatorView.swift in Sources */,
-				1D69E425A46983C1C6AB4F77E9FF616A /* TableViewCell.swift in Sources */,
-				89F4BD4E3489ED1597004688445CA29A /* TableViewDataProvider+ChangingCells.swift in Sources */,
-				6329F26A83C80BA150111EBB860F2090 /* TableViewDataProvider+ChangingSections.swift in Sources */,
-				1F6E6AEF5E5D855B583148817E2B19B2 /* TableViewDataProvider+HeaderFooters.swift in Sources */,
-				FB61FBA70C6B8A62F73B894DD4403728 /* TableViewDataProvider+Reloading.swift in Sources */,
-				516A7735DD9BDE7FCDA7528269F91C53 /* TableViewDataProvider-dummy.m in Sources */,
-				D003C619FCF81E3102375494AE837DC2 /* TableViewDataProvider.swift in Sources */,
-				11A2E50763EF98534C7F8A1D85F1C601 /* TableViewHeaderFooterView.swift in Sources */,
-				56B82170476A8FC1E76F5039A536BA69 /* UITableView+Dequeue.swift in Sources */,
-				523899DCA1546342A1AD14FCFDFC422A /* UIView+RecursiveSubview.swift in Sources */,
+				C2CFE2DFFF6E07E3761B5C90C5B4358F /* CellDescriptor.swift in Sources */,
+				2A23D18E21C2504D3F417968A5A636CB /* CellProvider.swift in Sources */,
+				85C3D7ACDD7FB8A53E22445FB5B493B7 /* Identifiable.swift in Sources */,
+				DBAF8AF347424EC866976135906216CE /* SectionDescriptor.swift in Sources */,
+				B831317ED0F3A4CF81C9321C957DD030 /* SeparatorView.swift in Sources */,
+				E444A8C247A91A8A82187CC1DD4E6159 /* TableViewCell.swift in Sources */,
+				C766F2C391CABD730213EA103259D01E /* TableViewDataProvider+CellIdentification.swift in Sources */,
+				30D5A849FDD034C7616E2190035460DC /* TableViewDataProvider+ChangingCells.swift in Sources */,
+				58A4620034BF0B54389B5BBAA4A1BD14 /* TableViewDataProvider+ChangingSections.swift in Sources */,
+				F8A2B3964DED6BE0B5D22335E2563BA0 /* TableViewDataProvider+HeaderFooters.swift in Sources */,
+				ECA6852BB5492217765EECEE7AD21A87 /* TableViewDataProvider+Reloading.swift in Sources */,
+				99D7BC14A036CE581E4E101987930627 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */,
+				FBE5A60E697FF83BAD56163569789D76 /* TableViewDataProvider+Visibility.swift in Sources */,
+				AA70CC0B9F03E541FE23BA2A7DE94E0A /* TableViewDataProvider-dummy.m in Sources */,
+				4848F9274C848D8347D749D644A5FD40 /* TableViewDataProvider.swift in Sources */,
+				2CF8431A649A6683B25EA38656A6C5F1 /* TableViewHeaderFooterView.swift in Sources */,
+				0F041F42B45A1F03EC9DB083E6B9CF61 /* UITableView+Dequeue.swift in Sources */,
+				5684AB3E2DBFD9FA835BC021C19C8643 /* UIView+RecursiveSubview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +346,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		33DB328C2D9A7D9AE09780132D4737A6 /* Release */ = {
+		14DE170A9B5CCB1A79501D6B8346289C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C34972D3221F065F4FF89E64E3398D7 /* TableViewDataProvider.xcconfig */;
+			baseConfigurationReference = 55208E2787FAB4A8DF8F645957C27B18 /* TableViewDataProvider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -347,27 +362,25 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TableViewDataProvider/TableViewDataProvider-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TableViewDataProvider/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider.modulemap";
 				PRODUCT_NAME = TableViewDataProvider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		47397219FA2E979E31BB78D0B2835B26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -392,12 +405,43 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		57A3C707666B0C3FBF0B5E3F48CE303F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55208E2787FAB4A8DF8F645957C27B18 /* TableViewDataProvider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TableViewDataProvider/TableViewDataProvider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TableViewDataProvider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider.modulemap";
+				PRODUCT_NAME = TableViewDataProvider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -514,42 +558,10 @@
 			};
 			name = Debug;
 		};
-		D6F6925531EFCD041F6C7334CE04952C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C34972D3221F065F4FF89E64E3398D7 /* TableViewDataProvider.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TableViewDataProvider/TableViewDataProvider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TableViewDataProvider/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider.modulemap";
-				PRODUCT_NAME = TableViewDataProvider;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D8400E9C7E483B41602E56ED5A904D4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -573,7 +585,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -605,8 +616,8 @@
 		DEC38917A51EC94C5B8F22E524F2273F /* Build configuration list for PBXNativeTarget "TableViewDataProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6F6925531EFCD041F6C7334CE04952C /* Debug */,
-				33DB328C2D9A7D9AE09780132D4737A6 /* Release */,
+				14DE170A9B5CCB1A79501D6B8346289C /* Debug */,
+				57A3C707666B0C3FBF0B5E3F48CE303F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

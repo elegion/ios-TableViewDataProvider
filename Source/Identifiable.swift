@@ -10,13 +10,24 @@ import Foundation
 
 public protocol Identifiable {
     
-    var stringRepresentation: String { get }
+    var identifier: String { get }
+    
+}
+
+extension Identifiable {
+    
+    public func isEqual(to other: Identifiable?) -> Bool {
+        guard let otherIdentifier = other?.identifier else {
+            return false
+        }
+        return self.identifier == otherIdentifier
+    }
     
 }
 
 extension String: Identifiable {
     
-    public var stringRepresentation: String {
+    public var identifier: String {
         return self
     }
     
@@ -24,7 +35,7 @@ extension String: Identifiable {
 
 extension Int: Identifiable {
     
-    public var stringRepresentation: String {
+    public var identifier: String {
         return String(self)
     }
     
@@ -32,7 +43,7 @@ extension Int: Identifiable {
 
 extension Float: Identifiable {
     
-    public var stringRepresentation: String {
+    public var identifier: String {
         return String(self)
     }
     

@@ -24,14 +24,14 @@ extension TableViewDataProvider {
         updateCells([(descriptor, indexPath)])
     }
     
-    public func setRows(_ descriptors: [CellDescriptor], inSectionWithIdentifier identifier: String, animation: UITableViewRowAnimation = .automatic) {
-        if let section = sections.first(where: { $0.identifier?.stringRepresentation == identifier }) {
+    public func setRows(_ descriptors: [CellDescriptor], inSectionWithIdentifier identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
+        if let section = sectionDescriptor(with: identifier) {
             setRows(descriptors, in: section)
         }
     }
     
     public func setRows(_ descriptors: [CellDescriptor], in section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
-        if let index = sections.enumerated().first(where:  { $1 === section })?.offset {
+        if let index = indexForSection(with: section) {
             setRows(descriptors, toSectionAt: index)
         }
     }
@@ -47,9 +47,9 @@ extension TableViewDataProvider {
         tableView.endUpdates()
     }
     
-    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: String, animation: UITableViewRowAnimation = .automatic) {
-        if let section = sections.first(where: { $0.identifier?.stringRepresentation == identifier }) {
-            deleteAllRows(from: section, animation: animation)
+    public func deleteAllRowsFromSectionWithIdentifier(_ identifier: Identifiable, animation: UITableViewRowAnimation = .automatic) {
+        if let index = indexForSection(with: identifier) {
+            deleteAllRowsFromSection(at: index, animation: animation)
         }
     }
     
@@ -65,7 +65,7 @@ extension TableViewDataProvider {
     }
     
     public func deleteAllRows(from section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
-        if let index = sections.enumerated().first(where:  { $1 === section })?.offset {
+        if let index = indexForSection(with: section) {
             deleteAllRowsFromSection(at: index, animation: animation)
         }
     }
