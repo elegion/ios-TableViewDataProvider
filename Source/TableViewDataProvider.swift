@@ -47,26 +47,6 @@ public class TableViewDataProvider: NSObject {
         return tableView.dataSource === self && tableView.delegate === self
     }
     
-    public func sectionWithIdentifier(_ identifier: Identifiable) -> SectionDescriptor? {
-        return sections.first {
-            (sectionDescriptor) -> Bool in
-            
-            guard let sectionIdentifier = sectionDescriptor.identifier else { return false }
-            
-            return sectionIdentifier.isEqual(to: identifier)
-        }
-    }
-    
-    public func indexOfSection(with identifier: Identifiable) -> Int? {
-        let index = sections.index {
-            (sec) -> Bool in
-            
-            guard let sectionIdentifier = sec.identifier else { return false }
-            return sectionIdentifier.stringRepresentation == identifier.stringRepresentation
-        }
-        return index
-    }
-    
 }
 
 extension TableViewDataProvider: UITableViewDelegate {
@@ -91,6 +71,24 @@ extension TableViewDataProvider: UITableViewDelegate {
         }
         
         return descriptor.height ?? UITableViewAutomaticDimension
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let descriptor = sections[indexPath.section].rows[indexPath.row]
+        
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        
+        descriptor.selection?(cell)
+    }
+    
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        let descriptor = sections[indexPath.section].rows[indexPath.row]
+        
+        if descriptor.selection == nil {
+            return nil
+        }
+        
+        return indexPath
     }
     
 }
