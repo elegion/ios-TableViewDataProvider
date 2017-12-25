@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = 'TableViewDataProvider'
-  s.version                 = '1.0.0.alpha.1'
+  s.version                 = '1.0.0.alpha.2'
   s.summary                 = 'UITableView Swift-style data provider'
   s.homepage                = 'https://github.com/elegion/ios-TableViewDataProvider'
   s.license                 = 'MIT'
