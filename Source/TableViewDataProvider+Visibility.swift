@@ -1,0 +1,69 @@
+//
+//  TableViewDataProvider+Visibility.swift
+//  TableViewDataProvider
+//
+//  Created by Ilya Kulebyakin on 12/22/17.
+//  Copyright © 2017 e-Legion. All rights reserved.
+//
+
+import Foundation
+
+extension TableViewDataProvider {
+    
+    public func setSection(at sectionIndex: Int, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
+        let section = sections[sectionIndex]
+        
+        guard section.isVisiblie != visible else {
+            return
+        }
+        
+        section.isVisiblie = visible
+        
+        guard isTableOwner else { return }
+        
+        tableView.reloadSections(IndexSet(integer: sectionIndex), with: animation)
+    }
+    
+    public func setSection(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
+        if let index = indexForSection(with: identifier) {
+            setSection(at: index, visible: visible, animation: animation)
+        }
+    }
+    
+    public func setSection(with sectionDescriptor: SectionDescriptor, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
+        if let index = indexForSection(with: sectionDescriptor) {
+            setSection(at: index, visible: visible, animation: animation)
+        }
+    
+    }
+    
+    public func setRow(at indexPath: IndexPath, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
+        let section = sections[indexPath.section]
+        let row = section.rows[indexPath.row]
+        
+        guard row.isVisible != visible else {
+            return
+        }
+        
+        row.isVisible = visible
+        
+        guard section.isVisiblie, isTableOwner else {
+            return
+        }
+        
+        tableView.reloadRows(at: [indexPath], with: animation)
+    }
+    
+    public func setRow(with identifier: Identifiable, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
+        if let indexPath = indexPathForRow(with: identifier) {
+            setRow(at: indexPath, visible: visible, animation: animation)
+        }
+    }
+    
+    public func setRow(for descriptor: CellDescriptor, visible: Bool, animation: UITableViewRowAnimation = .automatic) {
+        if let indexPath = indexPathForRow(with: descriptor) {
+            setRow(at: indexPath, visible: visible, animation: animation)
+        }
+    }
+    
+}

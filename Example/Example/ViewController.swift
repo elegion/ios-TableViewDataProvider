@@ -28,16 +28,50 @@ class ViewController: UIViewController {
             cell.separatorPositions = [.bottom(offsets: .zero)]
         })
         
-        let header = SectionDescriptor.HeaderFooterDescriptor(configuration: {
-            (header: TestHeader) in
+        let firstSection = SectionDescriptor(rows: [firstCell])
+        
+        firstSection.isVisiblie = false
+        
+        let firstCell1 = CellDescriptor(configuration: {
+            (cell: TestTableViewCell) in
             
-            header.titleLabel.text = "awgaweg\nawefawf\nawefa\n"
+            cell.mainLabel.text = "Some text 1"
+            cell.secondLabel.text = "Multi\nline\ntext\n"
+            cell.separatorPositions = [.bottom(offsets: .zero)]
         })
         
-        let firstSection = SectionDescriptor(header: header, footer: .text("w\nf\na\n\n\n\n\n\nwf\nawef\n"), rows: [firstCell])
+        let firstCell2 = CellDescriptor(configuration: {
+            (cell: TestTableViewCell) in
+            
+            cell.mainLabel.text = "Some text 2 "
+            cell.secondLabel.text = "Multi\nline\ntext\n"
+            cell.separatorPositions = [.bottom(offsets: .zero)]
+        })
+        firstCell2.isVisible = false
         
-        dataProvider.sections = [firstSection]
+        let firstCell3 = CellDescriptor(configuration: {
+            (cell: TestTableViewCell) in
+            
+            cell.mainLabel.text = "Some text 3"
+            cell.secondLabel.text = "Multi\nline\ntext\n"
+            cell.separatorPositions = [.bottom(offsets: .zero)]
+        })
+        
+        let secondSection = SectionDescriptor(rows: [firstCell1, firstCell2, firstCell3])
+        
+        dataProvider.sections = [firstSection, secondSection]
         dataProvider.reloadData()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.dataProvider.setSection(at: 0, visible: true)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            self.tableView.beginUpdates()
+            self.dataProvider.setRow(at: IndexPath.init(row: 1, section: 1), visible: true)
+            self.dataProvider.setRow(at: IndexPath.init(row: 2, section: 1), visible: false)
+            self.tableView.endUpdates()
+        }
     }
     
 }

@@ -10,6 +10,10 @@ import UIKit
 
 public class TableViewDataProvider: NSObject {
     
+    private enum Consts {
+        static let emptyCellIdentifier = "com.e-legion.TableViewDataProvider.EmptyCell"
+    }
+    
     let tableView: UITableView
     let customHeaderFooters: Bool
     
@@ -18,6 +22,8 @@ public class TableViewDataProvider: NSObject {
         self.customHeaderFooters = customHeaders
         
         super.init()
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: Consts.emptyCellIdentifier)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -31,7 +37,7 @@ public class TableViewDataProvider: NSObject {
     }
     
     var numberOfCells: Int {
-        return sections.reduce(into: 0, { $0 += $1.isCollapsed ? 0 : $1.rows.count })
+        return sections.reduce(into: 0, { $0 += $1.visibleRows.count })
     }
     
     var registeredCellIdentifiers = Set<String>()
@@ -56,13 +62,23 @@ public class TableViewDataProvider: NSObject {
 extension TableViewDataProvider: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        let descriptor = cellDescriptor(for: indexPath)
+        let section = sections[indexPath.section]
+        let descriptor = section.rows[indexPath.row]
+        
+        guard descriptor.isVisible && section.isVisiblie else {
+            return 0.0
+        }
         
         return descriptor.height ?? descriptor.estimatedHeight
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let descriptor = cellDescriptor(for: indexPath)
+        let section = sections[indexPath.section]
+        let descriptor = section.rows[indexPath.row]
+        
+        guard descriptor.isVisible && section.isVisiblie else {
+            return 0.0
+        }
         
         return descriptor.height ?? UITableViewAutomaticDimension
     }
@@ -86,17 +102,30 @@ extension TableViewDataProvider: UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let currentSection = sections[section]
-        return currentSection.isCollapsed ? 0 : currentSection.rows.count
+        
+        return currentSection.rows.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let descriptor = cellDescriptor(for: indexPath)
+        let section = sections[indexPath.section]
+        let descriptor = section.rows[indexPath.row]
+        
+        guard descriptor.isVisible, section.isVisiblie  else {
+            return emptyCellFor(indexPath: indexPath, in: tableView)
+        }
+        
         registerCellIfNeeded(from: descriptor)
         
         let cell = tableView.tp_dequeueCell(of: descriptor.cellClass, for: indexPath)
         
         descriptor.configuration(cell)
         
+        return cell
+    }
+    
+    private func emptyCellFor(indexPath: IndexPath, in tableView: UITableView) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Consts.emptyCellIdentifier, for: indexPath)
+        cell.isHidden = true
         return cell
     }
     

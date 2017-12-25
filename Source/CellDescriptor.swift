@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct CellDescriptor {
+public class CellDescriptor {
     
     let cellClass: UITableViewCell.Type
     let reuseIdentifier: String
@@ -18,6 +18,7 @@ public struct CellDescriptor {
     let estimatedHeight: CGFloat
     
     public var identifier: Identifiable?
+    public var isVisible = true
     
     public init<Cell: TableViewCell>(configuration: @escaping (Cell) -> Void,
                               selection: ((Cell) -> Void)? = nil,
