@@ -29,7 +29,7 @@ extension TableViewDataProvider: UITableViewDelegate {
             return 0.0
         }
         
-        return descriptor.height ?? UITableViewAutomaticDimension
+        return descriptor.height ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

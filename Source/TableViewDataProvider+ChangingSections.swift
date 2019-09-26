@@ -11,7 +11,7 @@ import Foundation
 extension TableViewDataProvider {
     
     // TODO: Batch updates + insert
-    public func append(sections descriptiors: [SectionDescriptor], animation: UITableViewRowAnimation = .automatic) {
+    public func append(sections descriptiors: [SectionDescriptor], animation: UITableView.RowAnimation = .automatic) {
         sections.append(contentsOf: descriptiors)
         
         withTableViewIfAccessible {
@@ -20,11 +20,11 @@ extension TableViewDataProvider {
         }
     }
     
-    public func append(section descriptor: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
+    public func append(section descriptor: SectionDescriptor, animation: UITableView.RowAnimation = .automatic) {
         append(sections: [descriptor], animation: .automatic)
     }
     
-    public func insert(section descriptor: SectionDescriptor, at index: Int, animation: UITableViewRowAnimation = .automatic) {
+    public func insert(section descriptor: SectionDescriptor, at index: Int, animation: UITableView.RowAnimation = .automatic) {
         sections.insert(descriptor, at: index)
         
         withTableViewIfAccessible {
@@ -32,7 +32,7 @@ extension TableViewDataProvider {
         }
     }
     
-    public func replaceIdentifiedSection(_ section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) throws {
+    public func replaceIdentifiedSection(_ section: SectionDescriptor, animation: UITableView.RowAnimation = .automatic) throws {
         guard let identifier = section.identifier else {
             throw Error.sectionIdentifierIsAbsent
         }
@@ -42,7 +42,7 @@ extension TableViewDataProvider {
         replaceSection(at: index, with: section, animation: animation)
     }
 
-    public func replaceSection(at index: Int, with section: SectionDescriptor, animation: UITableViewRowAnimation = .automatic) {
+    public func replaceSection(at index: Int, with section: SectionDescriptor, animation: UITableView.RowAnimation = .automatic) {
         sections[index] = section
         
         withTableViewIfAccessible {
@@ -50,7 +50,7 @@ extension TableViewDataProvider {
         }
     }
     
-    public func deleteSections(at indexes: IndexSet, animation: UITableViewRowAnimation = .automatic) {
+    public func deleteSections(at indexes: IndexSet, animation: UITableView.RowAnimation = .automatic) {
         self.sections = sections
             .enumerated()
             .filter { !indexes.contains($0.offset) }
@@ -61,7 +61,7 @@ extension TableViewDataProvider {
         }
     }
     
-    public func deleteSection(at index: Int, animation: UITableViewRowAnimation = .automatic) {
+    public func deleteSection(at index: Int, animation: UITableView.RowAnimation = .automatic) {
         deleteSections(at: IndexSet(integer: index), animation: animation)
     }
     

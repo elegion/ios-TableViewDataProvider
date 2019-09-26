@@ -10,19 +10,19 @@ import Foundation
 
 extension TableViewDataProvider {
     
-    public func scrollTo(section descriptor: SectionDescriptor, at scrollPosition: UITableViewScrollPosition, animated: Bool) throws {
+    public func scrollTo(section descriptor: SectionDescriptor, at scrollPosition: UITableView.ScrollPosition, animated: Bool) throws {
         let index = try indexForSection(with: descriptor)
         
         scrollToSection(at: index, at: scrollPosition, animated: animated)
     }
     
-    public func scrollToSection(with identifier: Identifiable, at scrollPosition: UITableViewScrollPosition, animated: Bool) throws {
+    public func scrollToSection(with identifier: Identifiable, at scrollPosition: UITableView.ScrollPosition, animated: Bool) throws {
         let index = try indexForSection(with: identifier)
         
         scrollToSection(at: index, at: scrollPosition, animated: animated)
     }
     
-    public func scrollToSection(at index: Int, at scrollPosition: UITableViewScrollPosition, animated: Bool) {
+    public func scrollToSection(at index: Int, at scrollPosition: UITableView.ScrollPosition, animated: Bool) {
         withTableViewIfAccessible {
             var row = 0
             var scrollToIndex = sections.enumerated().dropFirst(index).first(where: {
