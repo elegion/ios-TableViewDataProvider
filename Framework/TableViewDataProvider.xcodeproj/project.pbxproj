@@ -187,6 +187,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FEED2C191F83D7E60051A47B;
 			productRefGroup = FEED2C241F83D7E60051A47B /* Products */;
