@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11AE0E4D233D060E00778A81 /* TableViewDataProvider.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 11AE0E4C233D060E00778A81 /* TableViewDataProvider.podspec */; };
 		A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */; };
 		A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DA1FC862B60029907B /* SectionProvider.swift */; };
 		A69831DD1FC8668F0029907B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DC1FC8668F0029907B /* Error.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11AE0E4C233D060E00778A81 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TableViewDataProvider.podspec; path = ../TableViewDataProvider.podspec; sourceTree = "<group>"; };
 		A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+ScrollTo.swift"; sourceTree = "<group>"; };
 		A69831DA1FC862B60029907B /* SectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionProvider.swift; sourceTree = "<group>"; };
 		A69831DC1FC8668F0029907B /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -76,8 +78,9 @@
 		FEED2C191F83D7E60051A47B = {
 			isa = PBXGroup;
 			children = (
-				FEED2C251F83D7E60051A47B /* TableViewDataProvider */,
 				FEED2C241F83D7E60051A47B /* Products */,
+				FEED2C251F83D7E60051A47B /* TableViewDataProvider */,
+				11AE0E4C233D060E00778A81 /* TableViewDataProvider.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE0E4D233D060E00778A81 /* TableViewDataProvider.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
