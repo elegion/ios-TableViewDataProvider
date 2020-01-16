@@ -14,6 +14,7 @@ public class CellDescriptor {
     let reuseIdentifier: String
     let configuration: (UITableViewCell) -> Void
     let selection: ((UITableViewCell) -> Void)?
+    let editingActions: [UITableViewRowAction]?
     let height: CGFloat?
     let estimatedHeight: CGFloat
     
@@ -22,6 +23,7 @@ public class CellDescriptor {
     
     public init<Cell: TableViewCell>(configuration: @escaping (Cell) -> Void,
                               selection: ((Cell) -> Void)? = nil,
+                              editingActions: [UITableViewRowAction]? = [],
                               estimatedHeight: CGFloat = Cell.estimatedHeight,
                               height: CGFloat? = Cell.height,
                               reuseIdentifier: String = String(describing: type(of: Cell.self))) {
@@ -43,6 +45,8 @@ public class CellDescriptor {
                 //swiftlint:enable force_cast
             }
         })
+        
+        self.editingActions = editingActions
         
         self.configuration = {
             cell in

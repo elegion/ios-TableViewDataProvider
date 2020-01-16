@@ -50,4 +50,9 @@ extension TableViewDataProvider: UITableViewDelegate {
         return indexPath
     }
     
+    public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let descriptor = sections[indexPath.section].rows[indexPath.row]
+        return descriptor.editingActions
+    }
+    
 }
