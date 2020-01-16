@@ -20,7 +20,7 @@ extension UIView {
         for separator in config {
             
             let separatorFrame: CGRect
-            let separatorAutoresizingMask: UIViewAutoresizing
+            let separatorAutoresizingMask: UIView.AutoresizingMask
             
             switch separator.position {
             case .left(offsets: let offsets):

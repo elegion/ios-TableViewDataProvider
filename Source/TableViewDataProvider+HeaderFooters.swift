@@ -127,9 +127,9 @@ extension TableViewDataProvider {
         switch descriptor {
         case .text:
             debugPrint("WARNING!! Using titleForHeader or titlerForFooter with customHeaderFooters is strongly unsuggested")
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         case .configuration(let headerFooterClass, _):
-            return headerFooterClass.height ?? UITableViewAutomaticDimension
+            return headerFooterClass.height ?? UITableView.automaticDimension
         case .none:
             return 0.0
         }
