@@ -7,256 +7,292 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01F2EA06C5B95AA2171494D516697197 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		0A94FA6438D70EC65EC0C5CBB0950F45 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711575EE07D24AC2C9BD6092EEE0495 /* TableViewCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2CC1EBEEA8A25E95BEA7E848E84D0DA9 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D870D57BF7EDEA20CCF1B6932232B0 /* Identifiable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3A767BD997F31B47E6890D2DED8AC866 /* UIView+RecursiveSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F231CE7F3647BCEC93BBCD52FA7AB2 /* UIView+RecursiveSubview.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		45B13623FF9ED0920CF6AB3759314227 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1098FBF3969DE750296BF9658950E15 /* UITableView+Dequeue.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		482F279C56DB04986C125FD04F16C89B /* SectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74928D019859D45482858B0E32EE5AB7 /* SectionProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		52D2EBB712296600EB070955D3D989F4 /* IndexSet+TVDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03565D875103B7FED344C3FA09E1039 /* IndexSet+TVDP.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		567B3B3B3C578FD4698AF514E83D6C5E /* TableViewDataProvider+HeaderFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6FA259736B06BCAC6FF6CA381F2E54 /* TableViewDataProvider+HeaderFooters.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		64984D4CFC93770C0EDFCB295C808718 /* TableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C73F4542B981BA9B4A01BC329310E /* TableViewDataProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		678800265951F9FA4430CD64518163C9 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88C5992DA3BD1D89D2E15DE62C749DA8 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5261C4381F9744FCAA69CAD4E5C94 /* TableViewDataProvider+SectionIdentifiction.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8B6B2F0CAB7474A1DB450F10C27FEB87 /* TableViewDataProvider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F23CA818137AB7C13B5FC15A99F01C /* TableViewDataProvider-dummy.m */; };
-		8CF91281B5907104B1EC0AA5BB2E6C32 /* TableViewDataProvider+ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204A87545D84D08E49F4DB919988A842 /* TableViewDataProvider+ScrollTo.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9D6966655D6861C8738707D2FB1F7E80 /* TableViewDataProvider+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E54B3FCCFDBA5AEBDF258ABBACA73 /* TableViewDataProvider+Visibility.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A0D11CD3B8333DE5097993780E0B3450 /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A33B4A91DBCFE5645711C1D92A485 /* TableViewHeaderFooterView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A0F4C4F11C044C9CAFFBD055A92B4397 /* CellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D985427C770DBC2D4C4C46846804B /* CellProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A2048255207F25F1E4E6F4DA5AA1065E /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462549D580AC6590A3910C9DA7DC9EE0 /* SeparatorView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B4058174148EF520CAFC34EEF8AC18B3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580D511D0E65C936180568DB1F4773B /* Error.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D5AB5B7A96D41392F5D65340701D62EA /* TableViewDataProvider+CellIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98F4F47FF09F075AA7AFD464681538 /* TableViewDataProvider+CellIdentification.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D98EDEFDD05A5247C93B97ECEAF42E91 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */; };
-		DF3FC1427F756A983FD06D62F6F95692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		E284F7BD2F865CC9DD3564D5451E565D /* SectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110FDE9782F900384278F6FDCC90303A /* SectionDescriptor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E4B194995CDD9B550F8D6893A0185462 /* TableViewDataProvider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5990B035399C253491DF0F6104748F /* TableViewDataProvider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6D2645E190024CD3E8650D400DC346E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		F7885FB20DD5EA72DA2C81CC84633427 /* TableViewDataProvider+ChangingCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C82A160952AB7EF3FD096D5CBDCDC7B /* TableViewDataProvider+ChangingCells.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F79B536E23C276CC88D6495593576653 /* TableViewDataProvider+ChangingSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D114BDAD36DF78F39716C1C72765BBAC /* TableViewDataProvider+ChangingSections.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F88A589480196B6909D3EF4533D9C136 /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FDB370BCF18987C2A0E515937CCBB /* CellDescriptor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F986F074A17614FA67B8E95B934FCD6E /* TableViewDataProvider+Reloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED16B54F3F154C54705D2908E2C6B734 /* TableViewDataProvider+Reloading.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0A2DD71A937FDED7573B4B1C92BA029E /* TableViewDataProvider+ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B16132B8C569438C30DC02E080EEF /* TableViewDataProvider+ScrollTo.swift */; };
+		1052DA2603A98D188C7F7B09F5995D14 /* TableViewDataProvider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4536A05BAFF3F7FB988FF702E98FE4D /* TableViewDataProvider-dummy.m */; };
+		1169CEFCB8A050D848126655F824AE26 /* UIView+RecursiveSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CBF84EFF15C18EA7F661136B5676C3 /* UIView+RecursiveSubview.swift */; };
+		43BCCE12D9C20C2F6D4DD8542D9278FD /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574EED19C26B18E8E6E7533DD5A187A /* UITableView+Dequeue.swift */; };
+		496DAA93E27D0482E4EDED25628462C3 /* TableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BA4475CE208F538BE1815B280FA21 /* TableViewDataProvider.swift */; };
+		4A84F1CAA8F89A86F92DC0CC5835B9D2 /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52501FCA1353125A26F9F9681D77C19D /* CellDescriptor.swift */; };
+		53C10F05594C32F7214327C09709E0F7 /* TableViewDataProvider+CellIdentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733EC3BCCB5F7E0EF2A13FB2F4BEEE7 /* TableViewDataProvider+CellIdentification.swift */; };
+		5A3EE86C36B27A12B936C03B683F3FA9 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76EEC51C5CB8F59CE4EC8A71942DE9 /* Identifiable.swift */; };
+		68D09DD5E567439B2558F7D9CEABEB6B /* SectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57FE26638284FF38F64C782CE6A6787 /* SectionProvider.swift */; };
+		6C699CEB9C422BFAB3A419E0F95AFD5E /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BA405EFF82758C5306D439F1AED33 /* SeparatorView.swift */; };
+		701CE13461D40F6780F0B0A0AE03077F /* TableViewDataProvider+Reloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197CDDDE12F61D441EC542ECE6607F7 /* TableViewDataProvider+Reloading.swift */; };
+		717ECC1A64AB7E29C4F591D62ECAF52A /* IndexSet+TVDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773B5A935778A433A49E7CB0D1EA5611 /* IndexSet+TVDP.swift */; };
+		7606806097DA0E006552403D0412CEA4 /* TableViewDataProvider+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2F7311A171B26AD86759105673377 /* TableViewDataProvider+UITableViewDataSource.swift */; };
+		7881B573556E8B47FCEC0B0BCFF8D714 /* SectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82DB4E2D4A151EB1F2BC7DAAF77551 /* SectionDescriptor.swift */; };
+		7B4F2A0387AFDD4593A1C045D6A9A700 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F6B12EDE062074BB0BAC5F4291FDF /* Error.swift */; };
+		7B63CD4DD59E9ECA7B39EF8B5FD66826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		9F79978489E0A0868718D3039D212193 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A40B0380103E63E05B710CF7D997A86E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		A60542E2EC7DC339F6BCCB76B81400B9 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3886D596888D08B6229D3F9405EFAB /* TableViewDataProvider+SectionIdentifiction.swift */; };
+		C6B5D3D33C87B5158BA7A1DF744105FA /* TableViewDataProvider+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CE956A408BCA6A279B5239C203C2D /* TableViewDataProvider+UITableViewDelegate.swift */; };
+		C89D1259BEADD921B70053673066CA98 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280DDE5E63FDC5468F73544BCE772A5 /* TableViewCell.swift */; };
+		D87C2D3EC987A9A710E50341927F9DB3 /* TableViewDataProvider+ChangingSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468A6910F1FF2CDD21D827520D294D7E /* TableViewDataProvider+ChangingSections.swift */; };
+		DFCAE5FE02343997F7F9B10CFB0636DA /* TableViewDataProvider+ChangingCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38855716E99DFF9D5BDD9B55D92B356E /* TableViewDataProvider+ChangingCells.swift */; };
+		E4C044441EB0F39C7066D998A96CA5A5 /* TableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA71A53420548CCD0212B004BB9C19 /* TableViewHeaderFooterView.swift */; };
+		E513645969E466E17ADE29AA1DA136EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		E6B6D849B2F43B0F4D9A834131A64B3C /* TableViewDataProvider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 715CDC8B2CE9A3F5BF0F616F68C7C696 /* TableViewDataProvider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E878E4B87605DBF8071443BB1782D438 /* TableViewDataProvider+HeaderFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A1A9B7F9BE02682D2A918482BE9664 /* TableViewDataProvider+HeaderFooters.swift */; };
+		F0F76A19EB04E561B8A95A109DB148B0 /* CellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D6C28FA2EE8492792BC112F3E98F7 /* CellProvider.swift */; };
+		FE93F5DE065131BD991CF1BF48E45E04 /* TableViewDataProvider+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262895CF514C633D9A85F54A2790063D /* TableViewDataProvider+Visibility.swift */; };
+		FFA5BAE7DDFA01769893D1AD7044E654 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EF8B4DA95FC2C68FA1640FD991DC5670 /* PBXContainerItemProxy */ = {
+		3A486C73C309F804383553B289BE81FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9AA7CD7DF8EE1066DFD746B2D563EB9F;
+			remoteGlobalIDString = 32C6C11EE1265D8F04955F3C2F30E9C7;
 			remoteInfo = TableViewDataProvider;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01E6907CF2644EB1CF8E23F708A3DA0B /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		0711575EE07D24AC2C9BD6092EEE0495 /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Source/TableViewCell.swift; sourceTree = "<group>"; };
-		110FDE9782F900384278F6FDCC90303A /* SectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionDescriptor.swift; path = Source/SectionDescriptor.swift; sourceTree = "<group>"; };
-		119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
-		12D870D57BF7EDEA20CCF1B6932232B0 /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Source/Identifiable.swift; sourceTree = "<group>"; };
-		149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1580D511D0E65C936180568DB1F4773B /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		1B0C73F4542B981BA9B4A01BC329310E /* TableViewDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDataProvider.swift; path = Source/TableViewDataProvider.swift; sourceTree = "<group>"; };
-		204A87545D84D08E49F4DB919988A842 /* TableViewDataProvider+ScrollTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ScrollTo.swift"; path = "Source/TableViewDataProvider+ScrollTo.swift"; sourceTree = "<group>"; };
-		232FDB370BCF18987C2A0E515937CCBB /* CellDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellDescriptor.swift; path = Source/CellDescriptor.swift; sourceTree = "<group>"; };
-		2A1D985427C770DBC2D4C4C46846804B /* CellProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellProvider.swift; path = Source/CellProvider.swift; sourceTree = "<group>"; };
-		462549D580AC6590A3910C9DA7DC9EE0 /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Source/SeparatorView.swift; sourceTree = "<group>"; };
-		493CEEE3CA6092004AD6AA40FBB12EF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BEDB9362A85329B5A1954D96A1A420D /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TableViewDataProvider.framework; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DB5261C4381F9744FCAA69CAD4E5C94 /* TableViewDataProvider+SectionIdentifiction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+SectionIdentifiction.swift"; path = "Source/TableViewDataProvider+SectionIdentifiction.swift"; sourceTree = "<group>"; };
-		4F3A33B4A91DBCFE5645711C1D92A485 /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = Source/TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		552550F3F912264E5D073F8893691F88 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		6B5990B035399C253491DF0F6104748F /* TableViewDataProvider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-umbrella.h"; sourceTree = "<group>"; };
-		74928D019859D45482858B0E32EE5AB7 /* SectionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionProvider.swift; path = Source/SectionProvider.swift; sourceTree = "<group>"; };
-		764D33E23CE6C1111110B04F5CBADADB /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		91F231CE7F3647BCEC93BBCD52FA7AB2 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RecursiveSubview.swift"; path = "Source/UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B6FA259736B06BCAC6FF6CA381F2E54 /* TableViewDataProvider+HeaderFooters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+HeaderFooters.swift"; path = "Source/TableViewDataProvider+HeaderFooters.swift"; sourceTree = "<group>"; };
-		9C82A160952AB7EF3FD096D5CBDCDC7B /* TableViewDataProvider+ChangingCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingCells.swift"; path = "Source/TableViewDataProvider+ChangingCells.swift"; sourceTree = "<group>"; };
-		A1F23CA818137AB7C13B5FC15A99F01C /* TableViewDataProvider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableViewDataProvider-dummy.m"; sourceTree = "<group>"; };
-		A661FECCEBFF9D01869EE3B29C4C1EFF /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AF98F4F47FF09F075AA7AFD464681538 /* TableViewDataProvider+CellIdentification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+CellIdentification.swift"; path = "Source/TableViewDataProvider+CellIdentification.swift"; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C1098FBF3969DE750296BF9658950E15 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Dequeue.swift"; path = "Source/UITableView+Dequeue.swift"; sourceTree = "<group>"; };
-		C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
-		D03565D875103B7FED344C3FA09E1039 /* IndexSet+TVDP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IndexSet+TVDP.swift"; path = "Source/IndexSet+TVDP.swift"; sourceTree = "<group>"; };
-		D114BDAD36DF78F39716C1C72765BBAC /* TableViewDataProvider+ChangingSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingSections.swift"; path = "Source/TableViewDataProvider+ChangingSections.swift"; sourceTree = "<group>"; };
-		D15E54B3FCCFDBA5AEBDF258ABBACA73 /* TableViewDataProvider+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Visibility.swift"; path = "Source/TableViewDataProvider+Visibility.swift"; sourceTree = "<group>"; };
-		D441F3128D6FF2D8836BBE67E306C4B0 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E4C9AC101592E3A4D0C4E078C7ADB589 /* TableViewDataProvider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-prefix.pch"; sourceTree = "<group>"; };
-		E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		ED16B54F3F154C54705D2908E2C6B734 /* TableViewDataProvider+Reloading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Reloading.swift"; path = "Source/TableViewDataProvider+Reloading.swift"; sourceTree = "<group>"; };
-		EFFB74AAA6B2AE8DABF0E88E61E09178 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F72542631524AD2B6AB4DB1113AB94C5 /* TableViewDataProvider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewDataProvider.xcconfig; sourceTree = "<group>"; };
-		FA3FECB39CD3F17EFAD490A2B1ED2510 /* TableViewDataProvider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TableViewDataProvider.modulemap; sourceTree = "<group>"; };
+		0197CDDDE12F61D441EC542ECE6607F7 /* TableViewDataProvider+Reloading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Reloading.swift"; path = "Source/TableViewDataProvider+Reloading.swift"; sourceTree = "<group>"; };
+		1274E10A3A819B43AA4B8368706BD561 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TableViewDataProvider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		262895CF514C633D9A85F54A2790063D /* TableViewDataProvider+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Visibility.swift"; path = "Source/TableViewDataProvider+Visibility.swift"; sourceTree = "<group>"; };
+		2B82DB4E2D4A151EB1F2BC7DAAF77551 /* SectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionDescriptor.swift; path = Source/SectionDescriptor.swift; sourceTree = "<group>"; };
+		2D071B17F0835CC4D969D21FD338E806 /* TableViewDataProvider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-prefix.pch"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
+		35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		38855716E99DFF9D5BDD9B55D92B356E /* TableViewDataProvider+ChangingCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingCells.swift"; path = "Source/TableViewDataProvider+ChangingCells.swift"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		468A6910F1FF2CDD21D827520D294D7E /* TableViewDataProvider+ChangingSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingSections.swift"; path = "Source/TableViewDataProvider+ChangingSections.swift"; sourceTree = "<group>"; };
+		4C9B16132B8C569438C30DC02E080EEF /* TableViewDataProvider+ScrollTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ScrollTo.swift"; path = "Source/TableViewDataProvider+ScrollTo.swift"; sourceTree = "<group>"; };
+		52501FCA1353125A26F9F9681D77C19D /* CellDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellDescriptor.swift; path = Source/CellDescriptor.swift; sourceTree = "<group>"; };
+		55CBF84EFF15C18EA7F661136B5676C3 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RecursiveSubview.swift"; path = "Source/UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
+		5FEC5C03C9AEB1D26F310AFA5B49DBA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		612BA405EFF82758C5306D439F1AED33 /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Source/SeparatorView.swift; sourceTree = "<group>"; };
+		6B6CE956A408BCA6A279B5239C203C2D /* TableViewDataProvider+UITableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+UITableViewDelegate.swift"; path = "Source/TableViewDataProvider+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		6EE24C0D64A970D4AF28B5FA24A04388 /* TableViewDataProvider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewDataProvider.xcconfig; sourceTree = "<group>"; };
+		715CDC8B2CE9A3F5BF0F616F68C7C696 /* TableViewDataProvider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-umbrella.h"; sourceTree = "<group>"; };
+		773B5A935778A433A49E7CB0D1EA5611 /* IndexSet+TVDP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IndexSet+TVDP.swift"; path = "Source/IndexSet+TVDP.swift"; sourceTree = "<group>"; };
+		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		8733EC3BCCB5F7E0EF2A13FB2F4BEEE7 /* TableViewDataProvider+CellIdentification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+CellIdentification.swift"; path = "Source/TableViewDataProvider+CellIdentification.swift"; sourceTree = "<group>"; };
+		99708E92CDBAA6102E4529BABE240DFD /* TableViewDataProvider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TableViewDataProvider.modulemap; sourceTree = "<group>"; };
+		9D7BA4475CE208F538BE1815B280FA21 /* TableViewDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDataProvider.swift; path = Source/TableViewDataProvider.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FF2F7311A171B26AD86759105673377 /* TableViewDataProvider+UITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+UITableViewDataSource.swift"; path = "Source/TableViewDataProvider+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A1A9B7F9BE02682D2A918482BE9664 /* TableViewDataProvider+HeaderFooters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+HeaderFooters.swift"; path = "Source/TableViewDataProvider+HeaderFooters.swift"; sourceTree = "<group>"; };
+		D0DA71A53420548CCD0212B004BB9C19 /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = Source/TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
+		DC76EEC51C5CB8F59CE4EC8A71942DE9 /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Source/Identifiable.swift; sourceTree = "<group>"; };
+		E176CDBB37336F3575014A9DD670F59F /* TableViewDataProvider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TableViewDataProvider-Info.plist"; sourceTree = "<group>"; };
+		E280DDE5E63FDC5468F73544BCE772A5 /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Source/TableViewCell.swift; sourceTree = "<group>"; };
+		E4536A05BAFF3F7FB988FF702E98FE4D /* TableViewDataProvider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableViewDataProvider-dummy.m"; sourceTree = "<group>"; };
+		E574EED19C26B18E8E6E7533DD5A187A /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Dequeue.swift"; path = "Source/UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		E66F6B12EDE062074BB0BAC5F4291FDF /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED4D6C28FA2EE8492792BC112F3E98F7 /* CellProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellProvider.swift; path = Source/CellProvider.swift; sourceTree = "<group>"; };
+		EE3886D596888D08B6229D3F9405EFAB /* TableViewDataProvider+SectionIdentifiction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+SectionIdentifiction.swift"; path = "Source/TableViewDataProvider+SectionIdentifiction.swift"; sourceTree = "<group>"; };
+		F57FE26638284FF38F64C782CE6A6787 /* SectionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionProvider.swift; path = Source/SectionProvider.swift; sourceTree = "<group>"; };
+		F96F76B8FF926DF8084B84B2567426DD /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TableViewDataProvider.framework; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37319A323D19416B17080E8F55FA7C9E /* Frameworks */ = {
+		7D26D22C0F24E1E2A1216341070A7095 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F2EA06C5B95AA2171494D516697197 /* Foundation.framework in Frameworks */,
-				E6D2645E190024CD3E8650D400DC346E /* UIKit.framework in Frameworks */,
+				7B63CD4DD59E9ECA7B39EF8B5FD66826 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89559A214FE13D3463CA161EA7315578 /* Frameworks */ = {
+		8C9DB016486E532AB14D3EC43FCFF990 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3FC1427F756A983FD06D62F6F95692 /* Foundation.framework in Frameworks */,
+				E513645969E466E17ADE29AA1DA136EC /* Foundation.framework in Frameworks */,
+				A40B0380103E63E05B710CF7D997A86E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2141C539CEC9BBD10153C6F968D0FD75 /* Support Files */ = {
+		13E1E7A3A1F355A62D584F60490282C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				493CEEE3CA6092004AD6AA40FBB12EF7 /* Info.plist */,
-				FA3FECB39CD3F17EFAD490A2B1ED2510 /* TableViewDataProvider.modulemap */,
-				F72542631524AD2B6AB4DB1113AB94C5 /* TableViewDataProvider.xcconfig */,
-				A1F23CA818137AB7C13B5FC15A99F01C /* TableViewDataProvider-dummy.m */,
-				E4C9AC101592E3A4D0C4E078C7ADB589 /* TableViewDataProvider-prefix.pch */,
-				6B5990B035399C253491DF0F6104748F /* TableViewDataProvider-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TableViewDataProvider";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE9811ABEB5931E154211FCA14B78350 /* Pods-Example */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8DA4AEBFEB67354B119221356EBC641D /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				C27B78230E0EA61B88B22B13A9139789 /* Products */,
-				6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8DA4AEBFEB67354B119221356EBC641D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				94E95838C36ECA58EDFD4D7B0BF19512 /* TableViewDataProvider */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		94E95838C36ECA58EDFD4D7B0BF19512 /* TableViewDataProvider */ = {
-			isa = PBXGroup;
-			children = (
-				232FDB370BCF18987C2A0E515937CCBB /* CellDescriptor.swift */,
-				2A1D985427C770DBC2D4C4C46846804B /* CellProvider.swift */,
-				1580D511D0E65C936180568DB1F4773B /* Error.swift */,
-				12D870D57BF7EDEA20CCF1B6932232B0 /* Identifiable.swift */,
-				D03565D875103B7FED344C3FA09E1039 /* IndexSet+TVDP.swift */,
-				110FDE9782F900384278F6FDCC90303A /* SectionDescriptor.swift */,
-				74928D019859D45482858B0E32EE5AB7 /* SectionProvider.swift */,
-				462549D580AC6590A3910C9DA7DC9EE0 /* SeparatorView.swift */,
-				0711575EE07D24AC2C9BD6092EEE0495 /* TableViewCell.swift */,
-				1B0C73F4542B981BA9B4A01BC329310E /* TableViewDataProvider.swift */,
-				AF98F4F47FF09F075AA7AFD464681538 /* TableViewDataProvider+CellIdentification.swift */,
-				9C82A160952AB7EF3FD096D5CBDCDC7B /* TableViewDataProvider+ChangingCells.swift */,
-				D114BDAD36DF78F39716C1C72765BBAC /* TableViewDataProvider+ChangingSections.swift */,
-				9B6FA259736B06BCAC6FF6CA381F2E54 /* TableViewDataProvider+HeaderFooters.swift */,
-				ED16B54F3F154C54705D2908E2C6B734 /* TableViewDataProvider+Reloading.swift */,
-				204A87545D84D08E49F4DB919988A842 /* TableViewDataProvider+ScrollTo.swift */,
-				4DB5261C4381F9744FCAA69CAD4E5C94 /* TableViewDataProvider+SectionIdentifiction.swift */,
-				D15E54B3FCCFDBA5AEBDF258ABBACA73 /* TableViewDataProvider+Visibility.swift */,
-				4F3A33B4A91DBCFE5645711C1D92A485 /* TableViewHeaderFooterView.swift */,
-				C1098FBF3969DE750296BF9658950E15 /* UITableView+Dequeue.swift */,
-				91F231CE7F3647BCEC93BBCD52FA7AB2 /* UIView+RecursiveSubview.swift */,
-				2141C539CEC9BBD10153C6F968D0FD75 /* Support Files */,
-			);
-			name = TableViewDataProvider;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		C27B78230E0EA61B88B22B13A9139789 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D441F3128D6FF2D8836BBE67E306C4B0 /* Pods_Example.framework */,
-				4BEDB9362A85329B5A1954D96A1A420D /* TableViewDataProvider.framework */,
+				1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */,
+				F96F76B8FF926DF8084B84B2567426DD /* TableViewDataProvider.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE9811ABEB5931E154211FCA14B78350 /* Pods-Example */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EFFB74AAA6B2AE8DABF0E88E61E09178 /* Info.plist */,
-				119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */,
-				A661FECCEBFF9D01869EE3B29C4C1EFF /* Pods-Example-acknowledgements.markdown */,
-				764D33E23CE6C1111110B04F5CBADADB /* Pods-Example-acknowledgements.plist */,
-				699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */,
-				552550F3F912264E5D073F8893691F88 /* Pods-Example-frameworks.sh */,
-				01E6907CF2644EB1CF8E23F708A3DA0B /* Pods-Example-resources.sh */,
-				C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */,
-				149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */,
-				E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */,
+				441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */,
+				EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */,
+				D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */,
+				AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */,
+				31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */,
+				7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */,
+				B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */,
+				243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */,
 			);
 			name = "Pods-Example";
 			path = "Target Support Files/Pods-Example";
 			sourceTree = "<group>";
 		};
+		A03FABD727972BB098A9DEAF86A98EA8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3250B05910583C2EF19CA1CE1FA9BA3 /* TableViewDataProvider */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BAF1FA51B10D0F9D7BBC93309583E5F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99708E92CDBAA6102E4529BABE240DFD /* TableViewDataProvider.modulemap */,
+				6EE24C0D64A970D4AF28B5FA24A04388 /* TableViewDataProvider.xcconfig */,
+				E4536A05BAFF3F7FB988FF702E98FE4D /* TableViewDataProvider-dummy.m */,
+				E176CDBB37336F3575014A9DD670F59F /* TableViewDataProvider-Info.plist */,
+				2D071B17F0835CC4D969D21FD338E806 /* TableViewDataProvider-prefix.pch */,
+				715CDC8B2CE9A3F5BF0F616F68C7C696 /* TableViewDataProvider-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TableViewDataProvider";
+			sourceTree = "<group>";
+		};
+		CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A03FABD727972BB098A9DEAF86A98EA8 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				13E1E7A3A1F355A62D584F60490282C0 /* Products */,
+				CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D3250B05910583C2EF19CA1CE1FA9BA3 /* TableViewDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				52501FCA1353125A26F9F9681D77C19D /* CellDescriptor.swift */,
+				ED4D6C28FA2EE8492792BC112F3E98F7 /* CellProvider.swift */,
+				E66F6B12EDE062074BB0BAC5F4291FDF /* Error.swift */,
+				DC76EEC51C5CB8F59CE4EC8A71942DE9 /* Identifiable.swift */,
+				773B5A935778A433A49E7CB0D1EA5611 /* IndexSet+TVDP.swift */,
+				2B82DB4E2D4A151EB1F2BC7DAAF77551 /* SectionDescriptor.swift */,
+				F57FE26638284FF38F64C782CE6A6787 /* SectionProvider.swift */,
+				612BA405EFF82758C5306D439F1AED33 /* SeparatorView.swift */,
+				E280DDE5E63FDC5468F73544BCE772A5 /* TableViewCell.swift */,
+				9D7BA4475CE208F538BE1815B280FA21 /* TableViewDataProvider.swift */,
+				8733EC3BCCB5F7E0EF2A13FB2F4BEEE7 /* TableViewDataProvider+CellIdentification.swift */,
+				38855716E99DFF9D5BDD9B55D92B356E /* TableViewDataProvider+ChangingCells.swift */,
+				468A6910F1FF2CDD21D827520D294D7E /* TableViewDataProvider+ChangingSections.swift */,
+				C5A1A9B7F9BE02682D2A918482BE9664 /* TableViewDataProvider+HeaderFooters.swift */,
+				0197CDDDE12F61D441EC542ECE6607F7 /* TableViewDataProvider+Reloading.swift */,
+				4C9B16132B8C569438C30DC02E080EEF /* TableViewDataProvider+ScrollTo.swift */,
+				EE3886D596888D08B6229D3F9405EFAB /* TableViewDataProvider+SectionIdentifiction.swift */,
+				9FF2F7311A171B26AD86759105673377 /* TableViewDataProvider+UITableViewDataSource.swift */,
+				6B6CE956A408BCA6A279B5239C203C2D /* TableViewDataProvider+UITableViewDelegate.swift */,
+				262895CF514C633D9A85F54A2790063D /* TableViewDataProvider+Visibility.swift */,
+				D0DA71A53420548CCD0212B004BB9C19 /* TableViewHeaderFooterView.swift */,
+				E574EED19C26B18E8E6E7533DD5A187A /* UITableView+Dequeue.swift */,
+				55CBF84EFF15C18EA7F661136B5676C3 /* UIView+RecursiveSubview.swift */,
+				F3F65594BDC09105F234C913F1765A8D /* Pod */,
+				BAF1FA51B10D0F9D7BBC93309583E5F0 /* Support Files */,
+			);
+			name = TableViewDataProvider;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F3F65594BDC09105F234C913F1765A8D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5FEC5C03C9AEB1D26F310AFA5B49DBA5 /* LICENSE */,
+				1274E10A3A819B43AA4B8368706BD561 /* TableViewDataProvider.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		01C720E599B60FD6BC3C5B2E6BBEC930 /* Headers */ = {
+		2A6EACBBECC2033231527B4DA2BDA01E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B194995CDD9B550F8D6893A0185462 /* TableViewDataProvider-umbrella.h in Headers */,
+				9F79978489E0A0868718D3039D212193 /* Pods-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94D52031B4F808BD07B36D8D2C88ABBD /* Headers */ = {
+		DBCBD7FEF99F773FD769FD1CD5B38961 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				678800265951F9FA4430CD64518163C9 /* Pods-Example-umbrella.h in Headers */,
+				E6B6D849B2F43B0F4D9A834131A64B3C /* TableViewDataProvider-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9AA7CD7DF8EE1066DFD746B2D563EB9F /* TableViewDataProvider */ = {
+		0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEC38917A51EC94C5B8F22E524F2273F /* Build configuration list for PBXNativeTarget "TableViewDataProvider" */;
+			buildConfigurationList = 1DB1D7FF1EB4213C572D1886E5614B8F /* Build configuration list for PBXNativeTarget "Pods-Example" */;
 			buildPhases = (
-				DCFF07DF2151C489134FCB816559DCD3 /* Sources */,
-				37319A323D19416B17080E8F55FA7C9E /* Frameworks */,
-				01C720E599B60FD6BC3C5B2E6BBEC930 /* Headers */,
+				2A6EACBBECC2033231527B4DA2BDA01E /* Headers */,
+				10396F9BBEF808B97B1086C47BEA617C /* Sources */,
+				7D26D22C0F24E1E2A1216341070A7095 /* Frameworks */,
+				0FE2FDDE09674B7A99491FC23F7FE4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD3718B076FCA23093CFCF3D3B3E873 /* PBXTargetDependency */,
+			);
+			name = "Pods-Example";
+			productName = "Pods-Example";
+			productReference = 1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32C6C11EE1265D8F04955F3C2F30E9C7 /* TableViewDataProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE3B0D5C0816B5CFBA25E86E53171F96 /* Build configuration list for PBXNativeTarget "TableViewDataProvider" */;
+			buildPhases = (
+				DBCBD7FEF99F773FD769FD1CD5B38961 /* Headers */,
+				5DA7436997F3B05535DA108E48D59B6F /* Sources */,
+				8C9DB016486E532AB14D3EC43FCFF990 /* Frameworks */,
+				7564AB86FCCA3C191A3FED7419A829DC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -264,108 +300,111 @@
 			);
 			name = TableViewDataProvider;
 			productName = TableViewDataProvider;
-			productReference = 4BEDB9362A85329B5A1954D96A1A420D /* TableViewDataProvider.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BC92F2309649B45845E2B882315069AE /* Pods-Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5299E8B535D323A983BE2F1AD1ABB7 /* Build configuration list for PBXNativeTarget "Pods-Example" */;
-			buildPhases = (
-				3058830EF8F2F75DBFA2C9BA5AD9F496 /* Sources */,
-				89559A214FE13D3463CA161EA7315578 /* Frameworks */,
-				94D52031B4F808BD07B36D8D2C88ABBD /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				41AB2A49C05A7C144EF7CF843B931BDD /* PBXTargetDependency */,
-			);
-			name = "Pods-Example";
-			productName = "Pods-Example";
-			productReference = D441F3128D6FF2D8836BBE67E306C4B0 /* Pods_Example.framework */;
+			productReference = F96F76B8FF926DF8084B84B2567426DD /* TableViewDataProvider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C27B78230E0EA61B88B22B13A9139789 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 13E1E7A3A1F355A62D584F60490282C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC92F2309649B45845E2B882315069AE /* Pods-Example */,
-				9AA7CD7DF8EE1066DFD746B2D563EB9F /* TableViewDataProvider */,
+				0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */,
+				32C6C11EE1265D8F04955F3C2F30E9C7 /* TableViewDataProvider */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		3058830EF8F2F75DBFA2C9BA5AD9F496 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		0FE2FDDE09674B7A99491FC23F7FE4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98EDEFDD05A5247C93B97ECEAF42E91 /* Pods-Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCFF07DF2151C489134FCB816559DCD3 /* Sources */ = {
+		7564AB86FCCA3C191A3FED7419A829DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10396F9BBEF808B97B1086C47BEA617C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F88A589480196B6909D3EF4533D9C136 /* CellDescriptor.swift in Sources */,
-				A0F4C4F11C044C9CAFFBD055A92B4397 /* CellProvider.swift in Sources */,
-				B4058174148EF520CAFC34EEF8AC18B3 /* Error.swift in Sources */,
-				2CC1EBEEA8A25E95BEA7E848E84D0DA9 /* Identifiable.swift in Sources */,
-				52D2EBB712296600EB070955D3D989F4 /* IndexSet+TVDP.swift in Sources */,
-				E284F7BD2F865CC9DD3564D5451E565D /* SectionDescriptor.swift in Sources */,
-				482F279C56DB04986C125FD04F16C89B /* SectionProvider.swift in Sources */,
-				A2048255207F25F1E4E6F4DA5AA1065E /* SeparatorView.swift in Sources */,
-				0A94FA6438D70EC65EC0C5CBB0950F45 /* TableViewCell.swift in Sources */,
-				D5AB5B7A96D41392F5D65340701D62EA /* TableViewDataProvider+CellIdentification.swift in Sources */,
-				F7885FB20DD5EA72DA2C81CC84633427 /* TableViewDataProvider+ChangingCells.swift in Sources */,
-				F79B536E23C276CC88D6495593576653 /* TableViewDataProvider+ChangingSections.swift in Sources */,
-				567B3B3B3C578FD4698AF514E83D6C5E /* TableViewDataProvider+HeaderFooters.swift in Sources */,
-				F986F074A17614FA67B8E95B934FCD6E /* TableViewDataProvider+Reloading.swift in Sources */,
-				8CF91281B5907104B1EC0AA5BB2E6C32 /* TableViewDataProvider+ScrollTo.swift in Sources */,
-				88C5992DA3BD1D89D2E15DE62C749DA8 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */,
-				9D6966655D6861C8738707D2FB1F7E80 /* TableViewDataProvider+Visibility.swift in Sources */,
-				8B6B2F0CAB7474A1DB450F10C27FEB87 /* TableViewDataProvider-dummy.m in Sources */,
-				64984D4CFC93770C0EDFCB295C808718 /* TableViewDataProvider.swift in Sources */,
-				A0D11CD3B8333DE5097993780E0B3450 /* TableViewHeaderFooterView.swift in Sources */,
-				45B13623FF9ED0920CF6AB3759314227 /* UITableView+Dequeue.swift in Sources */,
-				3A767BD997F31B47E6890D2DED8AC866 /* UIView+RecursiveSubview.swift in Sources */,
+				FFA5BAE7DDFA01769893D1AD7044E654 /* Pods-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA7436997F3B05535DA108E48D59B6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A84F1CAA8F89A86F92DC0CC5835B9D2 /* CellDescriptor.swift in Sources */,
+				F0F76A19EB04E561B8A95A109DB148B0 /* CellProvider.swift in Sources */,
+				7B4F2A0387AFDD4593A1C045D6A9A700 /* Error.swift in Sources */,
+				5A3EE86C36B27A12B936C03B683F3FA9 /* Identifiable.swift in Sources */,
+				717ECC1A64AB7E29C4F591D62ECAF52A /* IndexSet+TVDP.swift in Sources */,
+				7881B573556E8B47FCEC0B0BCFF8D714 /* SectionDescriptor.swift in Sources */,
+				68D09DD5E567439B2558F7D9CEABEB6B /* SectionProvider.swift in Sources */,
+				6C699CEB9C422BFAB3A419E0F95AFD5E /* SeparatorView.swift in Sources */,
+				C89D1259BEADD921B70053673066CA98 /* TableViewCell.swift in Sources */,
+				53C10F05594C32F7214327C09709E0F7 /* TableViewDataProvider+CellIdentification.swift in Sources */,
+				DFCAE5FE02343997F7F9B10CFB0636DA /* TableViewDataProvider+ChangingCells.swift in Sources */,
+				D87C2D3EC987A9A710E50341927F9DB3 /* TableViewDataProvider+ChangingSections.swift in Sources */,
+				E878E4B87605DBF8071443BB1782D438 /* TableViewDataProvider+HeaderFooters.swift in Sources */,
+				701CE13461D40F6780F0B0A0AE03077F /* TableViewDataProvider+Reloading.swift in Sources */,
+				0A2DD71A937FDED7573B4B1C92BA029E /* TableViewDataProvider+ScrollTo.swift in Sources */,
+				A60542E2EC7DC339F6BCCB76B81400B9 /* TableViewDataProvider+SectionIdentifiction.swift in Sources */,
+				7606806097DA0E006552403D0412CEA4 /* TableViewDataProvider+UITableViewDataSource.swift in Sources */,
+				C6B5D3D33C87B5158BA7A1DF744105FA /* TableViewDataProvider+UITableViewDelegate.swift in Sources */,
+				FE93F5DE065131BD991CF1BF48E45E04 /* TableViewDataProvider+Visibility.swift in Sources */,
+				1052DA2603A98D188C7F7B09F5995D14 /* TableViewDataProvider-dummy.m in Sources */,
+				496DAA93E27D0482E4EDED25628462C3 /* TableViewDataProvider.swift in Sources */,
+				E4C044441EB0F39C7066D998A96CA5A5 /* TableViewHeaderFooterView.swift in Sources */,
+				43BCCE12D9C20C2F6D4DD8542D9278FD /* UITableView+Dequeue.swift in Sources */,
+				1169CEFCB8A050D848126655F824AE26 /* UIView+RecursiveSubview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		41AB2A49C05A7C144EF7CF843B931BDD /* PBXTargetDependency */ = {
+		BDD3718B076FCA23093CFCF3D3B3E873 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TableViewDataProvider;
-			target = 9AA7CD7DF8EE1066DFD746B2D563EB9F /* TableViewDataProvider */;
-			targetProxy = EF8B4DA95FC2C68FA1640FD991DC5670 /* PBXContainerItemProxy */;
+			target = 32C6C11EE1265D8F04955F3C2F30E9C7 /* TableViewDataProvider */;
+			targetProxy = 3A486C73C309F804383553B289BE81FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		14DE170A9B5CCB1A79501D6B8346289C /* Debug */ = {
+		26DD8C2C42A2B87B10D51E801730B38A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F72542631524AD2B6AB4DB1113AB94C5 /* TableViewDataProvider.xcconfig */;
+			baseConfigurationReference = 243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -375,38 +414,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TableViewDataProvider/TableViewDataProvider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TableViewDataProvider/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider.modulemap";
-				PRODUCT_NAME = TableViewDataProvider;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		47397219FA2E979E31BB78D0B2835B26 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -416,20 +424,19 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		57A3C707666B0C3FBF0B5E3F48CE303F /* Release */ = {
+		67F2C87646F889B3B43D84CCF65A239B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F72542631524AD2B6AB4DB1113AB94C5 /* TableViewDataProvider.xcconfig */;
+			baseConfigurationReference = 6EE24C0D64A970D4AF28B5FA24A04388 /* TableViewDataProvider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -441,25 +448,57 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/TableViewDataProvider/TableViewDataProvider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TableViewDataProvider/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider.modulemap";
+				PRODUCT_MODULE_NAME = TableViewDataProvider;
 				PRODUCT_NAME = TableViewDataProvider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+		7E68F1BCAFA0577D9A9BB187F0D348C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -469,10 +508,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -480,6 +521,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -488,7 +530,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -507,14 +548,17 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -524,10 +568,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -535,6 +581,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -543,7 +590,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -564,19 +610,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D8400E9C7E483B41602E56ED5A904D4A /* Release */ = {
+		BB4BA3E087A43B0C0AF5F84B1A4CBECC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */;
+			baseConfigurationReference = 6EE24C0D64A970D4AF28B5FA24A04388 /* TableViewDataProvider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -587,20 +635,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TableViewDataProvider/TableViewDataProvider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Example;
+				MODULEMAP_FILE = "Target Support Files/TableViewDataProvider/TableViewDataProvider.modulemap";
+				PRODUCT_MODULE_NAME = TableViewDataProvider;
+				PRODUCT_NAME = TableViewDataProvider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -611,34 +657,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E5299E8B535D323A983BE2F1AD1ABB7 /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+		1DB1D7FF1EB4213C572D1886E5614B8F /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47397219FA2E979E31BB78D0B2835B26 /* Debug */,
-				D8400E9C7E483B41602E56ED5A904D4A /* Release */,
+				7E68F1BCAFA0577D9A9BB187F0D348C7 /* Debug */,
+				26DD8C2C42A2B87B10D51E801730B38A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
-				6F9224530522DD3C735EC96CF142642E /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEC38917A51EC94C5B8F22E524F2273F /* Build configuration list for PBXNativeTarget "TableViewDataProvider" */ = {
+		DE3B0D5C0816B5CFBA25E86E53171F96 /* Build configuration list for PBXNativeTarget "TableViewDataProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14DE170A9B5CCB1A79501D6B8346289C /* Debug */,
-				57A3C707666B0C3FBF0B5E3F48CE303F /* Release */,
+				67F2C87646F889B3B43D84CCF65A239B /* Debug */,
+				BB4BA3E087A43B0C0AF5F84B1A4CBECC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

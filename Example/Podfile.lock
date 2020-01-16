@@ -1,16 +1,16 @@
 PODS:
-  - TableViewDataProvider (1.0.0.alpha.1)
+  - TableViewDataProvider (2.0.0)
 
 DEPENDENCIES:
   - TableViewDataProvider (from `../`)
 
 EXTERNAL SOURCES:
   TableViewDataProvider:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  TableViewDataProvider: 5785cac82c8639fcfe5b606318ada3754d16b3cf
+  TableViewDataProvider: 4712b4d3b290b63b0e08dbef0da619008c2f8c9f
 
 PODFILE CHECKSUM: a6a6e3f92793f1dcbbf6fa2b03bf504b28b66998
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.8.4
