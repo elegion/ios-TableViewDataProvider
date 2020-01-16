@@ -52,7 +52,13 @@ extension TableViewDataProvider: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let descriptor = sections[indexPath.section].rows[indexPath.row]
-        return descriptor.editingActions
+        if let editingActions = descriptor.editingActions {
+            return editingActions(indexPath)
+        } else  {
+            // Nil value causes table view to display default UIKit swipe-to-delete action
+            // So we return empty array to disable swipe-to-delete action completely.
+            return []
+        }
     }
     
 }
