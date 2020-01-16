@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license                 = 'MIT'
   s.author                  = { 'Ilya Kulebyakin' => 'ilya.kulebyakin@e-legion.com' }
   s.source                  = { :git => 'https://github.com/elegion/ios-TableViewDataProvider.git', :tag => "v#{s.version}" }
-  spec.swift_version        = "5.0"
+  s.swift_version           = "5.0"
   s.ios.deployment_target   = '9.0'
 
   s.source_files            = 'Source'
