@@ -51,8 +51,8 @@
 
 /* Begin PBXFileReference section */
 		0197CDDDE12F61D441EC542ECE6607F7 /* TableViewDataProvider+Reloading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Reloading.swift"; path = "Source/TableViewDataProvider+Reloading.swift"; sourceTree = "<group>"; };
-		1274E10A3A819B43AA4B8368706BD561 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TableViewDataProvider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1274E10A3A819B43AA4B8368706BD561 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TableViewDataProvider.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		262895CF514C633D9A85F54A2790063D /* TableViewDataProvider+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Visibility.swift"; path = "Source/TableViewDataProvider+Visibility.swift"; sourceTree = "<group>"; };
 		2B82DB4E2D4A151EB1F2BC7DAAF77551 /* SectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionDescriptor.swift; path = Source/SectionDescriptor.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		4C9B16132B8C569438C30DC02E080EEF /* TableViewDataProvider+ScrollTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ScrollTo.swift"; path = "Source/TableViewDataProvider+ScrollTo.swift"; sourceTree = "<group>"; };
 		52501FCA1353125A26F9F9681D77C19D /* CellDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellDescriptor.swift; path = Source/CellDescriptor.swift; sourceTree = "<group>"; };
 		55CBF84EFF15C18EA7F661136B5676C3 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RecursiveSubview.swift"; path = "Source/UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
-		5FEC5C03C9AEB1D26F310AFA5B49DBA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5FEC5C03C9AEB1D26F310AFA5B49DBA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		612BA405EFF82758C5306D439F1AED33 /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Source/SeparatorView.swift; sourceTree = "<group>"; };
 		6B6CE956A408BCA6A279B5239C203C2D /* TableViewDataProvider+UITableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+UITableViewDelegate.swift"; path = "Source/TableViewDataProvider+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		6EE24C0D64A970D4AF28B5FA24A04388 /* TableViewDataProvider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewDataProvider.xcconfig; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		8733EC3BCCB5F7E0EF2A13FB2F4BEEE7 /* TableViewDataProvider+CellIdentification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+CellIdentification.swift"; path = "Source/TableViewDataProvider+CellIdentification.swift"; sourceTree = "<group>"; };
 		99708E92CDBAA6102E4529BABE240DFD /* TableViewDataProvider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TableViewDataProvider.modulemap; sourceTree = "<group>"; };
 		9D7BA4475CE208F538BE1815B280FA21 /* TableViewDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewDataProvider.swift; path = Source/TableViewDataProvider.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FF2F7311A171B26AD86759105673377 /* TableViewDataProvider+UITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+UITableViewDataSource.swift"; path = "Source/TableViewDataProvider+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
 		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		ED4D6C28FA2EE8492792BC112F3E98F7 /* CellProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellProvider.swift; path = Source/CellProvider.swift; sourceTree = "<group>"; };
 		EE3886D596888D08B6229D3F9405EFAB /* TableViewDataProvider+SectionIdentifiction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+SectionIdentifiction.swift"; path = "Source/TableViewDataProvider+SectionIdentifiction.swift"; sourceTree = "<group>"; };
 		F57FE26638284FF38F64C782CE6A6787 /* SectionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionProvider.swift; path = Source/SectionProvider.swift; sourceTree = "<group>"; };
-		F96F76B8FF926DF8084B84B2567426DD /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TableViewDataProvider.framework; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96F76B8FF926DF8084B84B2567426DD /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,8 +551,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
