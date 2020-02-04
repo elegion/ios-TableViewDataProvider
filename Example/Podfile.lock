@@ -1,5 +1,5 @@
 PODS:
-  - TableViewDataProvider (2.0.0)
+  - TableViewDataProvider (3.0.0)
 
 DEPENDENCIES:
   - TableViewDataProvider (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TableViewDataProvider: 4712b4d3b290b63b0e08dbef0da619008c2f8c9f
+  TableViewDataProvider: 18698c8ec7ee8be205e224ce58839f1538fac0b2
 
 PODFILE CHECKSUM: a6a6e3f92793f1dcbbf6fa2b03bf504b28b66998
 
