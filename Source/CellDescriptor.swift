@@ -14,7 +14,7 @@ public class CellDescriptor {
     let reuseIdentifier: String
     let configuration: (UITableViewCell) -> Void
     let selection: ((UITableViewCell) -> Void)?
-    let editingActions: ((IndexPath) -> [UITableViewRowAction]?)?
+    let trailingSwipeActionsConfiguration: ((IndexPath) -> SwipeActionsConfiguration?)?
     let height: CGFloat?
     let estimatedHeight: CGFloat
     
@@ -23,7 +23,7 @@ public class CellDescriptor {
     
     public init<Cell: TableViewCell>(configuration: @escaping (Cell) -> Void,
                               selection: ((Cell) -> Void)? = nil,
-                              editingActions: ((IndexPath) -> [UITableViewRowAction]?)? = nil,
+                              trailingSwipeActionsConfiguration: ((IndexPath) -> SwipeActionsConfiguration?)? = nil,
                               estimatedHeight: CGFloat = Cell.estimatedHeight,
                               height: CGFloat? = Cell.height,
                               reuseIdentifier: String = String(describing: type(of: Cell.self))) {
@@ -46,7 +46,7 @@ public class CellDescriptor {
             }
         })
         
-        self.editingActions = editingActions
+        self.trailingSwipeActionsConfiguration = trailingSwipeActionsConfiguration
         
         self.configuration = {
             cell in
