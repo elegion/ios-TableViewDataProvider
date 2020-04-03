@@ -37,7 +37,7 @@ extension TableViewDataProvider: UITableViewDelegate {
         
         guard let cell = tableView.cellForRow(at: indexPath) else { return }
         
-        descriptor.selection?(cell)
+        descriptor.selection?(cell, indexPath)
     }
     
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
