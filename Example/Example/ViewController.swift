@@ -26,6 +26,12 @@ class ViewController: UIViewController {
             cell.mainLabel.text = "Some text"
             cell.secondLabel.text = "Multi\nline\ntext\n"
             cell.separatorPositions = [.bottom(offsets: .zero)]
+        }, trailingSwipeActionsConfiguration: { _ in
+            var delete = SwipeActionsConfiguration.ContextualAction(style: .destructive, title: "Удалить") { (_, completion) in
+                
+            }
+            delete.image = UIImage(named: "bin")
+            return SwipeActionsConfiguration(actions: [delete])
         })
         
         let firstSection = SectionDescriptor(rows: [firstCell])

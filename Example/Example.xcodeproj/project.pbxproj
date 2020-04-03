@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11523CC923D07EAE00DCE639 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TableViewDataProvider.podspec; path = ../TableViewDataProvider.podspec; sourceTree = "<group>"; };
 		BFA8A79C8DA6E3AE1BD018E7 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		E0C4966A10E2A4D7DEEFF074 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F2FB8108DD24A13694CDAB89 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +69,7 @@
 		FEED2C311F83D89E0051A47B = {
 			isa = PBXGroup;
 			children = (
+				11523CC923D07EAE00DCE639 /* TableViewDataProvider.podspec */,
 				FEED2C3C1F83D89E0051A47B /* Example */,
 				FEED2C3B1F83D89E0051A47B /* Products */,
 				4D2BB1F9169E3A323A70B150 /* Pods */,
@@ -112,7 +114,6 @@
 				FEED2C371F83D89E0051A47B /* Frameworks */,
 				FEED2C381F83D89E0051A47B /* Resources */,
 				BA1BF7B18E9F49515E21EFF2 /* [CP] Embed Pods Frameworks */,
-				60E871EA16697E40F065E57E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,28 +192,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		60E871EA16697E40F065E57E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BA1BF7B18E9F49515E21EFF2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TableViewDataProvider/TableViewDataProvider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -221,7 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

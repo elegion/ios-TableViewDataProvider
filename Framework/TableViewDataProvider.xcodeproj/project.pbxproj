@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112C104923E9690400DC9891 /* SwipeActionsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C104823E9690400DC9891 /* SwipeActionsConfiguration.swift */; };
 		A61C9DBE1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */; };
 		A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DA1FC862B60029907B /* SectionProvider.swift */; };
 		A69831DD1FC8668F0029907B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69831DC1FC8668F0029907B /* Error.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112C104823E9690400DC9891 /* SwipeActionsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsConfiguration.swift; sourceTree = "<group>"; };
 		11AE0E4C233D060E00778A81 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TableViewDataProvider.podspec; path = ../TableViewDataProvider.podspec; sourceTree = "<group>"; };
 		A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+ScrollTo.swift"; sourceTree = "<group>"; };
 		A69831DA1FC862B60029907B /* SectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionProvider.swift; sourceTree = "<group>"; };
@@ -104,29 +106,30 @@
 		FEED2C2E1F83D8050051A47B /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				FE42BE861F84D7D1005231E9 /* CellDescriptor.swift */,
+				FEDC7EC31FA8CBF40098566B /* CellProvider.swift */,
+				A69831DC1FC8668F0029907B /* Error.swift */,
+				AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */,
+				FEDED9311FF125CB00AFA857 /* IndexSet+TVDP.swift */,
+				FE42BE881F84DA09005231E9 /* SectionDescriptor.swift */,
+				A69831DA1FC862B60029907B /* SectionProvider.swift */,
+				FE1BDEA41F9A069B00BB1F01 /* SeparatorView.swift */,
+				112C104823E9690400DC9891 /* SwipeActionsConfiguration.swift */,
+				FEED2C511F83DB020051A47B /* TableViewCell.swift */,
 				FEED2C2F1F83D8290051A47B /* TableViewDataProvider.swift */,
-				FE6843E31FF1416200653F65 /* TableViewDataProvider+UITableViewDelegate.swift */,
-				FE6843E51FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift */,
-				FE1BDEA61F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift */,
-				FE42BE8A1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift */,
+				FEC97F251FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift */,
 				FE42BE8C1F84DFB6005231E9 /* TableViewDataProvider+ChangingCells.swift */,
 				FE3BCEA21F852F2500244C9D /* TableViewDataProvider+ChangingSections.swift */,
+				FE1BDEA61F9A0BFF00BB1F01 /* TableViewDataProvider+HeaderFooters.swift */,
+				FE42BE8A1F84DEA5005231E9 /* TableViewDataProvider+Reloading.swift */,
 				A61C9DBD1FCD8A1C00B7DDF0 /* TableViewDataProvider+ScrollTo.swift */,
-				FEC97F231FED2FA7009BCC52 /* TableViewDataProvider+Visibility.swift */,
-				FEC97F251FED3C9B009BCC52 /* TableViewDataProvider+CellIdentification.swift */,
 				FEC97F271FED4685009BCC52 /* TableViewDataProvider+SectionIdentifiction.swift */,
-				FEED2C511F83DB020051A47B /* TableViewCell.swift */,
-				FE1BDEA41F9A069B00BB1F01 /* SeparatorView.swift */,
-				FE42BE861F84D7D1005231E9 /* CellDescriptor.swift */,
-				FE42BE881F84DA09005231E9 /* SectionDescriptor.swift */,
-				FEBC3EC31F99FDC6009752F5 /* UITableView+Dequeue.swift */,
+				FE6843E51FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift */,
+				FE6843E31FF1416200653F65 /* TableViewDataProvider+UITableViewDelegate.swift */,
+				FEC97F231FED2FA7009BCC52 /* TableViewDataProvider+Visibility.swift */,
 				FED0A6EF1F9A16DE00B76A30 /* TableViewHeaderFooterView.swift */,
+				FEBC3EC31F99FDC6009752F5 /* UITableView+Dequeue.swift */,
 				FE1BDEA21F9A05AF00BB1F01 /* UIView+RecursiveSubview.swift */,
-				FEDC7EC31FA8CBF40098566B /* CellProvider.swift */,
-				A69831DA1FC862B60029907B /* SectionProvider.swift */,
-				AD5DFF2D1FC43F7F006BB418 /* Identifiable.swift */,
-				A69831DC1FC8668F0029907B /* Error.swift */,
-				FEDED9311FF125CB00AFA857 /* IndexSet+TVDP.swift */,
 			);
 			name = Code;
 			path = ../../Source;
@@ -232,6 +235,7 @@
 				FE42BE891F84DA09005231E9 /* SectionDescriptor.swift in Sources */,
 				AD5DFF2E1FC43F7F006BB418 /* Identifiable.swift in Sources */,
 				FEED2C521F83DB020051A47B /* TableViewCell.swift in Sources */,
+				112C104923E9690400DC9891 /* SwipeActionsConfiguration.swift in Sources */,
 				FE6843E61FF1418A00653F65 /* TableViewDataProvider+UITableViewDataSource.swift in Sources */,
 				FEDC7EC41FA8CBF40098566B /* CellProvider.swift in Sources */,
 				A69831DB1FC862B70029907B /* SectionProvider.swift in Sources */,
@@ -293,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -349,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -372,7 +376,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TableViewDataProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.TableViewDataProvider";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -396,7 +399,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TableViewDataProvider/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.TableViewDataProvider";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
