@@ -13,7 +13,7 @@ public class CellDescriptor {
     let cellClass: UITableViewCell.Type
     let reuseIdentifier: String
     let configuration: (UITableViewCell) -> Void
-    let selection: ((UITableViewCell) -> Void)?
+    let selection: ((UITableViewCell, IndexPath) -> Void)?
     let trailingSwipeActionsConfiguration: ((IndexPath) -> SwipeActionsConfiguration?)?
     let height: CGFloat?
     let estimatedHeight: CGFloat
@@ -22,7 +22,7 @@ public class CellDescriptor {
     public var isVisible = true
     
     public init<Cell: TableViewCell>(configuration: @escaping (Cell) -> Void,
-                              selection: ((Cell) -> Void)? = nil,
+                              selection: ((Cell, IndexPath) -> Void)? = nil,
                               trailingSwipeActionsConfiguration: ((IndexPath) -> SwipeActionsConfiguration?)? = nil,
                               estimatedHeight: CGFloat = Cell.estimatedHeight,
                               height: CGFloat? = Cell.height,
@@ -35,13 +35,13 @@ public class CellDescriptor {
         self.estimatedHeight = estimatedHeight
         
         self.selection = selection.map({
-            (selection) -> (UITableViewCell) -> Void in
+            (selection) -> (UITableViewCell, IndexPath) -> Void in
             
-            return  {
-                cell in
+            return {
+                cell, indexPath in
                 
                 //swiftlint:disable force_cast
-                selection(cell as! Cell)
+                selection(cell as! Cell, indexPath)
                 //swiftlint:enable force_cast
             }
         })
