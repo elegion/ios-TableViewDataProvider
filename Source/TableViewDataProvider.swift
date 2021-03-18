@@ -17,10 +17,17 @@ public class TableViewDataProvider: NSObject {
     private let tableView: UITableView
     let customHeaderFooters: Bool
     
+    public var useExactEstimatedHeight: Bool = false
+    public var estimatedTableViewWidth: CGFloat = UIScreen.main.bounds.width
+    public var defaultCellHeight: CGFloat = UITableView.automaticDimension
+    public var defaultEstimatedCellHeight: CGFloat?
+    
+    public static let exactContentDimension: CGFloat = -2.0
+    
     public init(tableView: UITableView, customHeaders: Bool) {
+        
         self.tableView = tableView
         self.customHeaderFooters = customHeaders
-        
         super.init()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: Consts.emptyCellIdentifier)
@@ -31,6 +38,8 @@ public class TableViewDataProvider: NSObject {
     }
     
     public var sections: [SectionDescriptor] = []
+    
+    internal var cachedCells: [String: UITableViewCell] = [:]
     
     func cellDescriptor(for indexPath: IndexPath) -> CellDescriptor {
         return sections[indexPath.section].rows[indexPath.row]

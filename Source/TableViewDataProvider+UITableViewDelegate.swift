@@ -17,8 +17,19 @@ extension TableViewDataProvider: UITableViewDelegate {
         guard descriptor.isVisible && section.isVisiblie else {
             return 0.0
         }
-        
-        return descriptor.height ?? descriptor.estimatedHeight
+
+        if useExactEstimatedHeight {
+            let estimatedHeight = defaultEstimatedCellHeight ?? descriptor.estimatedHeight
+           
+            if let cell = cachedCell(of: descriptor.cellClass) as? TableViewCell {
+                descriptor.configuration(cell)
+                return cell.exactHeight(forEstimatedWidth: estimatedTableViewWidth)
+            } else {
+                return descriptor.height ?? descriptor.estimatedHeight
+            }
+        } else {
+            return descriptor.height ?? descriptor.estimatedHeight
+        }
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -29,7 +40,15 @@ extension TableViewDataProvider: UITableViewDelegate {
             return 0.0
         }
         
-        return descriptor.height ?? UITableView.automaticDimension
+        let height = descriptor.height ?? defaultCellHeight
+        
+        if height == TableViewDataProvider.exactContentDimension,
+           let cell = cachedCell(of: descriptor.cellClass) as? TableViewCell {
+            descriptor.configuration(cell)
+            return cell.exactHeight(forEstimatedWidth: estimatedTableViewWidth)
+        } else {
+            return descriptor.height ?? UITableView.automaticDimension
+        }
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
