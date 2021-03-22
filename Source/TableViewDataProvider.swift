@@ -25,9 +25,9 @@ public class TableViewDataProvider: NSObject {
     public var estimatedTableViewWidth: CGFloat = UIScreen.main.bounds.width
     
     public init(tableView: UITableView, customHeaders: Bool) {
-        
         self.tableView = tableView
         self.customHeaderFooters = customHeaders
+        
         super.init()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: Consts.emptyCellIdentifier)
@@ -38,7 +38,7 @@ public class TableViewDataProvider: NSObject {
     }
     
     public var sections: [SectionDescriptor] = []
- 
+    
     func cellDescriptor(for indexPath: IndexPath) -> CellDescriptor {
         return sections[indexPath.section].rows[indexPath.row]
     }
