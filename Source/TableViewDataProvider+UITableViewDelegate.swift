@@ -19,7 +19,6 @@ extension TableViewDataProvider: UITableViewDelegate {
         }
 
         if useExactEstimatedCellHeight {
-            print("estimatedHeightForRowAt:")
             if let cell = cachedCell(of: descriptor.cellClass) as? TableViewCell {
                 descriptor.configuration(cell)
                 return cell.exactHeight(forEstimatedWidth: estimatedTableViewWidth)
