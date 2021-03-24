@@ -35,6 +35,7 @@
 		C6EAE63F007801D1D63796B3E94B8B0E /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF88DEFE0C0EB95A913C0FF5ACC3ABA /* CellDescriptor.swift */; };
 		CAB310062277A5D39099917B6066D62B /* TableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4158833FFD72D8E9B614EAE292E59A43 /* TableViewDataProvider.swift */; };
 		E78A2C3634DB314394D4119341F249AD /* TableViewDataProvider+HeaderFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EC7F40EBBD40C70AC32C795ECA32C3 /* TableViewDataProvider+HeaderFooters.swift */; };
+		EC95BAAB2604B7ED00885482 /* TableViewDataProvider+CachedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95BAAA2604B7ED00885482 /* TableViewDataProvider+CachedCell.swift */; };
 		F977F9D32321B112BEDC709A415CDAB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		FDBBCFFBC3CAC745D55C6D1579045B88 /* TableViewDataProvider+ChangingCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803D61F0F8FF340FB4A33959CB0F05F /* TableViewDataProvider+ChangingCells.swift */; };
 		FFA5BAE7DDFA01769893D1AD7044E654 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
@@ -56,7 +57,7 @@
 		07958F4729A32C20C89B096C80369128 /* UIView+RecursiveSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+RecursiveSubview.swift"; path = "Source/UIView+RecursiveSubview.swift"; sourceTree = "<group>"; };
 		1803D61F0F8FF340FB4A33959CB0F05F /* TableViewDataProvider+ChangingCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+ChangingCells.swift"; path = "Source/TableViewDataProvider+ChangingCells.swift"; sourceTree = "<group>"; };
 		1DBAB85A2064AA604F265C00B2152AE0 /* SectionDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionDescriptor.swift; path = Source/SectionDescriptor.swift; sourceTree = "<group>"; };
-		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
@@ -78,25 +79,26 @@
 		7CCF50041589765C7E170657235ED8A4 /* TableViewDataProvider+UITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+UITableViewDataSource.swift"; path = "Source/TableViewDataProvider+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		8F8F0BD783ECB6BBACA666EBAE583E47 /* SeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorView.swift; path = Source/SeparatorView.swift; sourceTree = "<group>"; };
 		996743A782F55A2BA4367276AAD13296 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A31755AA9820CBC7B216BDE8328601D6 /* TableViewDataProvider+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+Visibility.swift"; path = "Source/TableViewDataProvider+Visibility.swift"; sourceTree = "<group>"; };
 		A534773C5C9E55C5CDBB71967D935B61 /* TableViewDataProvider+CellIdentification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+CellIdentification.swift"; path = "Source/TableViewDataProvider+CellIdentification.swift"; sourceTree = "<group>"; };
 		ABE87F3FE4C2269CD75C8AC3D2B99682 /* TableViewDataProvider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TableViewDataProvider-Info.plist"; sourceTree = "<group>"; };
 		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		B2A2B83C74230D94403DB1B943CF2E5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B2A2B83C74230D94403DB1B943CF2E5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BAF505994E814BF7271862E9BCD3F180 /* TableViewHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewHeaderFooterView.swift; path = Source/TableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		BCF88DEFE0C0EB95A913C0FF5ACC3ABA /* CellDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellDescriptor.swift; path = Source/CellDescriptor.swift; sourceTree = "<group>"; };
 		C080E100ECD7EC7997139F2B6FFB5B38 /* TableViewDataProvider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableViewDataProvider-dummy.m"; sourceTree = "<group>"; };
 		CAC96DE6BE9D9C96C946F2AB83E7633B /* TableViewDataProvider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewDataProvider-prefix.pch"; sourceTree = "<group>"; };
 		CDBDEE60B1586CB6F95D328781FD437F /* SectionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionProvider.swift; path = Source/SectionProvider.swift; sourceTree = "<group>"; };
-		CF50EDC8E227072221C52A4D75388B19 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TableViewDataProvider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CF50EDC8E227072221C52A4D75388B19 /* TableViewDataProvider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TableViewDataProvider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D0D7E6BEC1B6B9B5F3EB9DE33009F9E6 /* TableViewDataProvider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TableViewDataProvider.modulemap; sourceTree = "<group>"; };
 		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 		DAD8B019F433FBB585DBC74EEDAB8AA2 /* TableViewDataProvider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewDataProvider.xcconfig; sourceTree = "<group>"; };
 		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC95BAAA2604B7ED00885482 /* TableViewDataProvider+CachedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDataProvider+CachedCell.swift"; sourceTree = "<group>"; };
 		F43476527FA8B46770867A34E3AE191A /* TableViewDataProvider+UITableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableViewDataProvider+UITableViewDelegate.swift"; path = "Source/TableViewDataProvider+UITableViewDelegate.swift"; sourceTree = "<group>"; };
-		F96F76B8FF926DF8084B84B2567426DD /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TableViewDataProvider.framework; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96F76B8FF926DF8084B84B2567426DD /* TableViewDataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewDataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				487E89973422BE617C37BC59F4E73194 /* SwipeActionsConfiguration.swift */,
 				3AFF84BCF1B288EED5BCB914665F0C62 /* TableViewCell.swift */,
 				4158833FFD72D8E9B614EAE292E59A43 /* TableViewDataProvider.swift */,
+				EC95BAAA2604B7ED00885482 /* TableViewDataProvider+CachedCell.swift */,
 				A534773C5C9E55C5CDBB71967D935B61 /* TableViewDataProvider+CellIdentification.swift */,
 				1803D61F0F8FF340FB4A33959CB0F05F /* TableViewDataProvider+ChangingCells.swift */,
 				677D95A380D6A28F515471C9901F1720 /* TableViewDataProvider+ChangingSections.swift */,
@@ -372,6 +375,7 @@
 				354D2E9E78AAAE767D2EE6E668791836 /* SectionDescriptor.swift in Sources */,
 				71396365C4C4E9586EC3090ECB2442EE /* SectionProvider.swift in Sources */,
 				755C4D870E497A6F1511B4120B07740B /* SeparatorView.swift in Sources */,
+				EC95BAAB2604B7ED00885482 /* TableViewDataProvider+CachedCell.swift in Sources */,
 				BF935B60EFA0B50458700E7204E5E2C6 /* SwipeActionsConfiguration.swift in Sources */,
 				4C5EAC0A9EE1AA50E853A6FC37E40A03 /* TableViewCell.swift in Sources */,
 				C58E4EF8913E336FE0F62E268E5B6A86 /* TableViewDataProvider+CellIdentification.swift in Sources */,
@@ -555,8 +559,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

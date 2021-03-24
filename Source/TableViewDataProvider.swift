@@ -17,6 +17,13 @@ public class TableViewDataProvider: NSObject {
     private let tableView: UITableView
     let customHeaderFooters: Bool
     
+    /// Calculate estimated cell height base on content size
+    public var useExactEstimatedCellHeight: Bool = false
+    /// Calculate cell height base on content size
+    public var useExactCellHeight: Bool = false
+    /// Estimated width of table view for cell height calculations
+    public var estimatedTableViewWidth: CGFloat = UIScreen.main.bounds.width
+    
     public init(tableView: UITableView, customHeaders: Bool) {
         self.tableView = tableView
         self.customHeaderFooters = customHeaders
@@ -42,6 +49,8 @@ public class TableViewDataProvider: NSObject {
     
     var registeredCellIdentifiers = Set<String>()
     var registeredHeaderFooterIdentifiers = Set<String>()
+    
+    internal var cachedCells: [String: UITableViewCell] = [:]
     
     func withTableViewIfAccessible(do actions: (UITableView) -> Void) {
         if tableView.dataSource === self && tableView.delegate === self {

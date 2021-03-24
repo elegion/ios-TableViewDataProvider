@@ -87,4 +87,15 @@ open class TableViewCell: UITableViewCell {
         contentView.setSeparators(separatorPositions.map { ($0, separatorColor, separatorWidth) })
     }
     
+    open func exactHeight(forEstimatedWidth width: CGFloat) -> CGFloat {
+        layoutIfNeeded()
+        let targetSize = CGSize(width: width, height: .zero)
+        let fittingSize = systemLayoutSizeFitting(
+            targetSize,
+            withHorizontalFittingPriority: .required,
+            verticalFittingPriority: .defaultLow)
+        
+        return fittingSize.height
+    }
+    
 }
