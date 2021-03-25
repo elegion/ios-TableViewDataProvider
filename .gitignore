@@ -11,6 +11,7 @@
 !*/xcshareddata/*
 *.xccheckout
 */xcuserdata/*
+*/DerivedData/*
 
 # Carthage
 Carthage/Build
