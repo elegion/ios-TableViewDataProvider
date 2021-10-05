@@ -22,7 +22,9 @@ extension TableViewDataProvider {
     
     private func initCell<T: UITableViewCell>(of cellType: T.Type) -> T {
         let name = String(describing: cellType)
-        if let cell = Bundle(for: cellType).loadNibNamed(name, owner: nil, options: nil)?.first as? T {
+        let bundle = Bundle(for: cellType)
+        if bundle.path(forResource: name, ofType: "nib") != nil,
+           let cell = bundle.loadNibNamed(name, owner: nil, options: nil)?.first as? T {
             return cell
         } else {
             return cellType.init()
