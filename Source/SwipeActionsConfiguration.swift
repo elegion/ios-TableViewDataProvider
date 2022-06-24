@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// iOS 9-10 compatible swipe actions configuration
 public struct SwipeActionsConfiguration {
